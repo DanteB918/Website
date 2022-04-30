@@ -1,10 +1,12 @@
 <html>
-<link rel="icon" href="RobotLogo_low.png">
-    <!--<meta name="viewport" content="device-width, initial-scale=1.0">-->
+    
+    <link rel="icon" href="RobotLogo_low.png">
     <div id="home">
+      
 
     </div>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <div id="loadwrapper">
             <div id="Loaderimg">
                 
@@ -78,12 +80,6 @@ has so much to offer in terms of problem solving skills, I became addicted to le
         <div id="projects">
         <ul>
             <li>In progress!<br /></li>
-            <!--<p>Game in the Web, made with HTML, CSS and Javascript</p>
-            <li>Card Reader<br /></li>
-            <p>Program to handle transactions using Object Oriented Programming in combination with
-                 functional methods. Created in Python.</p>
-            <li>Personal Website</li>
-            <p>Website made with HTML, CSS and Javascript</p>-->
         </ul>
         </div>
             
@@ -111,16 +107,6 @@ has so much to offer in terms of problem solving skills, I became addicted to le
       
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-          <!--<label for="emailname">Email</label>
-          <input type="text" id="emailname" name="email" placeholder="Your email..">-->
-      
-          <!--<label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>-->
       
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
@@ -151,9 +137,8 @@ has so much to offer in terms of problem solving skills, I became addicted to le
 </script>
 
 <style>
-/*@media only screen and (min-width: 400px){
 
-}*/
+
 
 #backwrap{
     height: 100%;
@@ -171,25 +156,7 @@ has so much to offer in terms of problem solving skills, I became addicted to le
   gray
 );
 }
-/*#backouter{
-    height: 100px;
-    position: relative;
-    width: 100px;
-    margin: auto;
-    display: block;
-    background-color: #ff0000;
-    border-radius: 50%;
-    box-shadow: 0 0 30px rgb(255, 111, 0);
-    position: relative;
-    animation: orbit 25s linear infinite;
-}
-@keyframes orbit{
-    0%{ transform: translateX(0px) translateY(350px);z-index: 0;}
-    25%{ transform: translateX(500px) translateY(350px) scale(125%); z-index: 0;}
-    50%{transform: translateX(0px) translateY(350px) scale(200%);z-index: 2;}
-    75%{transform: translateX(-500px) translateY(350px) scale(125%);z-index: 2;}
-    100%{transform: translateX(0px) translateY(350px);z-index: -3;}
-}*/
+
 #backmid{
     height: 500px;
     width: 500px;
@@ -209,7 +176,6 @@ has so much to offer in terms of problem solving skills, I became addicted to le
     text-align: center;
     border-radius: 50%;
     position: relative;
-    /*animation: to-load 5s linear infinite;*/
     box-shadow: 0 0 40px cyan;
     text-align: center;
     font-size: 85px;
@@ -266,17 +232,15 @@ has so much to offer in terms of problem solving skills, I became addicted to le
     100%{opacity: 0; z-index: 0}
 }
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid cyan; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid cyan; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
 }
-
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: cyan;
   color: darkcyan;
@@ -285,13 +249,9 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: limegreen;
 }
-
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: darkcyan;
@@ -329,10 +289,7 @@ h1{
     /*position: relative;
     left: 100px;*/
 }
-/*#titleholder:hover{
-   
 
-}*/
 
 .waviy {
   position: relative;
@@ -542,7 +499,42 @@ transform: scale(1.5);
 }
 
 
+@media only screen and (min-width: 280px) and (max-width: 800px){
+#words p{
+    margin: 20px;
+    text-align: center;
+    transform: none;
+    display: block;
+    transform: translateY(-175px);
+    }
 
+#loadwrapper #Loaderimg{
+    transform: scale(75%) translateX(-126px) translateY(17%);
+    }
+#words{
+    width: 100%;
+    transform: translateY(225px);
+}
+#RoboLogo{
+    display: none;
+
+}
+#everything #skills{
+    transform: translateX(45px);
+}
+#words .container{
+    width: 95%;
+}
+#words #body2{
+    width: 132%;
+}
+#github{
+    transform: translateY(100px);
+}
+#sololearn{
+    transform: translateX(75px);
+}
+}
 
 
 </style>
