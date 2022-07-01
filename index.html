@@ -92,10 +92,11 @@
     <div style="height: 100vh; width: 100%;" class="fluid-container">
         <div style="transform: translateY(50vh);"class="row">
             
-            <div class="col-6 offset-3">
-            <h1>I'm <span style="font-family:'sedgwick ave display', cursive; font-size: 75px;">Dante Bradshaw</span>, <br/>And I'm a <span style="color:crimson;"class="typing"></span></h1>
-            <p>Let's work together.</p>
-            <button style="background-color:crimson;color:white; font-size:25px; border-radius: 10%;font-family: 'water brush';">Contact Me</button>
+            <div class="col-lg-12 col-md-8">
+            <h1 id="ima">I'm <span id="developer">Dante Bradshaw</span>, <br/>And I'm a <span style="color:crimson;"class="typing"></span></h1>
+            <p id="together">Let's work together.</p>
+            <a href="mailto:plansuperior@icloud.com" target="_blank"><button style="background-color:crimson;color:white; font-size:25px; border-radius: 10%;font-family: 'water brush';">Contact Me</button>
+            </a>
             </div>
             <div id="skills">
                 <h2></h2>
@@ -246,7 +247,10 @@ var typed = new Typed(".typing", {
 
 <style>
 
-
+#developer{
+    font-family:'sedgwick ave display', cursive;
+    font-size: 75px;
+}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -284,7 +288,7 @@ html, body {
     border-radius: 50%;
     box-shadow: 0 0 30px rgb(0, 114, 114);
     border: 50px solid rgb(0, 114, 114);
-    transform: translateY(85px);
+    transform: translateY(25%);
     position: relative;
 
 }
@@ -631,18 +635,20 @@ transform: scale(1.2);
 }
 
 
-/*@media only screen and (min-width: 280px) and (max-width: 800px){
+@media only screen and (min-width: 280px) and (max-width: 800px){
 #words p{
     margin: 20px;
     text-align: center;
     transform: none;
     display: block;
-    transform: translateY(-175px);
+  
     }
-
+#together{
+    transform: translateY(50%);
+}
 #loadwrapper #Loaderimg{
     /*transform: scale(70%) translateX(-135px) translateY(17%);*/
-    /*display: none;
+    display: none;
     animation: none;
     }
 #loadwrapper{
@@ -650,34 +656,52 @@ transform: scale(1.2);
     animation: none;
 }
 #backwrap #backmid{
-    transform: scale(80%) translateY(175px) translateX(-57px);
+    transform: scale(70%) translateY(45%) translateX(-17.5%);
 
 }
+nav ul li{
+    padding: 0;
+    margin: 3px;
+}
+#mylogo{
+    left: 5%;
+}
+.container2{
+    width: 95%;
+}
 #words{
-    width: 100%;
-    transform: translateY(225px);
+    
 }
 #RoboLogo{
     display: none;
 
 }
+h1{
+    font-size: 35px;
+   
+}
+#ima{
+    transform: translateY(-50%);
+    padding: 0;
+}
+#developer{
+    font-family:'sedgwick ave display', cursive;
+    font-size: 35px;
+}
 #everything #skills{
-    transform: translateX(45px);
+    
 }
 #everything #titleholder{
-	width: 450px;
+	
 }
 #words .container{
-    width: 95%;
+   
 }
 #words #body2{
-    width: 135%;
 }
 #github{
-    transform: translateY(100px);
 }
 #sololearn{
-    transform: translateX(75px);
 }
 #everything .waviy span{
 	font-family: none;
@@ -687,13 +711,12 @@ transform: scale(1.2);
   
 }
 #projectholder{
-    width: 450px;
 }
 #projectholder h1{
-    transform: translateX(10%);
+    
 }
 
-}*/
+}
 
 
 </style>
