@@ -114,14 +114,32 @@
         <h1 align="center" style="color:white;">About Me</h1>
         <h3 align="center"><span style="color:crimson;"class="typing2"></span></h3>
         <div id="Me" class="col-lg-6">
-            <img src = "moscowcity.jpg" height = "400px" width = "350px" />
+            <img src = "picofmenew.png" height = "450px" width = "400px" />
         </div>
         <div id="words" class="col-lg-6">
+            <div class="row offset-1">
+                <div class="col-2">
+                    <a href="https://www.linkedin.com/in/dante-bradshaw-6a05061a5/" target="_blank"><img src="linkedin.png" alt="socials" class="socials"/></a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.instagram.com/dantebradshaw_/" target="_blank"><img src="insta.png" alt="socials" class="socials"/></a>
+                </div>
+                <div class="col-2">
+                    <a href="https://www.facebook.com/dante.bradshaw.39" target="_blank"><img src="facebook.png" alt="socials" class="socials"/></a>
+                </div>
+                <div class="col-2">
+                    <a href="https://github.com/danteb918" target="_blank"><img src="github1.png" alt="socials" class="socials"/></a>
+                </div>
+                <div class="col-2">
+                    <a href="" target="_blank"><img src="vk.png" alt="socials" class="socials"/></a>
+                </div>
+            </div>
             <p>
             I hope you like this website!<br />I am a self-taught developer looking for a place to hone to my technical skills. I have an Associate's degree in Elementary Education which was my career path until I started to learn to program. I always loved problem solving,
 whether it be solving a rubic's cube, chess, or anything of that nature. It was my hobby to solve things. Once I figured out that programming
 has so much to offer in terms of problem solving skills, I became addicted to learning it. Here are the things I've created along the way!
             </p>
+            
         </div>
     </div>
     <div class="d-flex flex-row offset-1 my-4">
@@ -189,6 +207,7 @@ has so much to offer in terms of problem solving skills, I became addicted to le
                 <a href= "https://github.com/DanteB918"><div id="github"><img src="github.png" height ="75px" width = "75px" /></div></a>
                 <a href = "https://www.sololearn.com/profile/25088101"><div id="sololearn"><img src="SoloLearn_logo.svg.png" height="75px" width="75px" /></div></a>
     </div>
+   
     </head>
     <body>
 
@@ -210,6 +229,13 @@ has so much to offer in terms of problem solving skills, I became addicted to le
       
         </form>
       </div>
+      <div class="fluid-container">
+          <div class="row">
+      <footer style="background-color:rgb(0, 114, 114); padding-top: 1%;padding-bottom: 3%; text-align: center; transform: translateY(25%);">
+        Created <a href="Https://dantebradshaw.tk" style="color: crimson;">Dante Bradshaw</a> |  ©2022 <br/>All rights reserved.
+        </footer>
+    </div>
+    </div>
 </div>
 <div id="backwrap">
     <div id="backouter">
@@ -218,6 +244,8 @@ has so much to offer in terms of problem solving skills, I became addicted to le
         
         <div id="backicon">D
             </div>
+            </div>
+
 </html>
 
 <script>
@@ -245,7 +273,14 @@ var typed = new Typed(".typing", {
 </script>
 
 <style>
-
+.socials{
+    
+    height: 125px;
+    width: 125px;
+}
+.socials:hover{
+    opacity: .5;
+}
 #developer{
     font-family:'sedgwick ave display', cursive;
     font-size: 75px;
@@ -329,7 +364,6 @@ html, body {
     border: 100px solid darkcyan;
     transform: translateY(25px);
     
-
 }
 #Loadericon{
     height: 100px;
@@ -387,6 +421,7 @@ input[type=submit]:hover {
   z-index: 100;
   position: relative;
 }
+
 #everything{
     transform: translateY(50px);
 }
@@ -457,7 +492,6 @@ h1{
     display: block;
     
     
-
 }*/
 #projectholder h1{
     /*transform: translate(200px);*/
@@ -582,6 +616,7 @@ transition: transform .2s;
 }
 #pythonlogo:hover{
 transform: scale(1.2);
+z-index: 5;
 }
 #csslogo{
 list-style-type: none;
@@ -589,6 +624,7 @@ transition: transform .2s;
 }
 #csslogo:hover{
 transform: scale(1.2);
+z-index: 5;
 }
 #htmllogo{
 list-style-type: none;
@@ -596,6 +632,7 @@ transition: transform .2s;
 }
 #htmllogo:hover{
 transform: scale(1.2);
+z-index: 5;
 }
 #linuxlogo{
 list-style-type: none;
@@ -603,6 +640,7 @@ transition: transform .2s;
 }
 #linuxlogo:hover{
 transform: scale(1.2);
+z-index: 5;
 }
 #javascriptlogo{
 list-style-type: none;
@@ -610,6 +648,7 @@ transition: transform .2s;
 }
 #javascriptlogo:hover{
 transform: scale(1.2);
+z-index: 5;
 }
 #bootstraplogo{
 list-style-type: none;
@@ -617,6 +656,7 @@ transition: transform .2s;
 }
 #bootstraplogo:hover{
 transform: scale(1.2);
+z-index: 5;
 }
 #sololearn{
     float: right;
@@ -653,6 +693,12 @@ transform: scale(1.2);
     font-size: 18px;
   
     }
+.socials{
+    padding: none;
+    text-align: right;
+    height: 75px;
+    width: 75px;
+}
 #proj h1{
     font-size: 27px;
 }
