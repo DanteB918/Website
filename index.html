@@ -8,7 +8,7 @@
 <link rel="stylesheet"
 		  href="https://fonts.googleapis.com/css?family=Water+Brush">
 <link rel="stylesheet"
-		  href="https://fonts.googleapis.com/css?family=Lavishly+Yours|Ingrid+darling|Updock|Press+Start+2P|Great+Vibes&effect=3d">
+		  href="https://fonts.googleapis.com/css?family=Lavishly+Yours|Ingrid+darling|Updock|Playfair+Display|Space+Mono|Press+Start+2P|Great+Vibes&effect=3d">
 		<link rel="stylesheet"
 		  href="https://fonts.googleapis.com/css?family=Rubik+Glitch|Sacramento&effect=anaglyph">
           <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
@@ -95,7 +95,7 @@
             <div class="col-12" style="text-align: center;">
             <h1 id="ima">I'm <span id="developer">Dante Bradshaw</span>, <br/>And I'm a <span style="color:crimson;"class="typing"></span></h1>
             <p id="together">Let's work together.</p>
-            <a href="mailto:plansuperior@icloud.com" target="_blank"><button style="background-color:crimson;color:white; font-size:25px; border-radius: 10%;font-family: 'water brush';">Contact Me</button>
+            <a href="mailto:plansuperior@icloud.com" target="_blank"><button style="background-color:crimson;color:white; font-size:25px; border-radius: 10%;font-family: 'Sedgwick Ave Display', serif; font-style: italic;">Contact Me</button>
             </a>
             </div>
             <div id="skills">
@@ -111,7 +111,7 @@
 </div>
     <div style="background-color: darkgray;"class="fluid-container">
     <div class="row">
-        <h1 align="center" style="color:white;">About Me</h1>
+        <h1 align="center" style="color:white; font-family: Sedgwick Ave Display, serif; padding-top: 20px;">About Me</h1>
         <h3 align="center"><span style="color:crimson;"class="typing2"></span></h3>
         <div id="Me" class="col-lg-6">
             <img id="picofme" src = "picofmenew.png" height = "450px" width = "400px"/>
@@ -134,11 +134,13 @@
                     <a href="https://vk.com/id571437082" target="_blank"><img src="vk.png" alt="socials" class="socials"/></a>
                 </div>
             </div>
+            <h3 align="center" style="padding-top: 20px;"><u>Biography</u> <span style="color: crimson; font-family: 'playfair display', serif; font-size: 30px; line-height: 20px;">&amp; </span><u>Info</u></h3><br/>
             <p>
-            I hope you like this website!<br />I am a self-taught developer looking for a place to hone to my technical skills. I have an Associate's degree in Elementary Education which was my career path until I started to learn to program. I always loved problem solving,
-whether it be solving a rubic's cube, chess, or anything of that nature. It was my hobby to solve things. Once I figured out that programming
-has so much to offer in terms of problem solving skills, I became addicted to learning it. Here are the things I've created along the way!
+                Hello, my name is Dante Bradshaw. I’m a self-taught developer from Rehoboth Beach, Delaware. I have an associates degree in Elementary Education from Delaware Technical Community College. Not long after working within the school system, I figured out that I didn’t have a passion for teaching, but a passion for learning. I’ve always been obsessed with learning things. Such as, chess, playing guitar, or even how to solve a Rubik’s Cube.<br/>
+                
+
             </p>
+            <p align="center"><span style="font-family: 'Space Mono', monospace;font-size: 30px; text-align: center; ">Here are some things I've <span style="color: cyan;">learned</span> along the way.</span></p>
             
         </div>
     </div>
@@ -152,6 +154,7 @@ has so much to offer in terms of problem solving skills, I became addicted to le
         <div id = "linuxlogo" class="col-2"><img src = "linux.png" height = "75px" width = "75px" /></div>
     
 </div>
+
 
 
         <!--<div id="RoboLogo"><img src="RobotLogo_low.png" height="150px" width="150px" /></div>-->
@@ -319,11 +322,12 @@ html, body {
     height: 500px;
     width: 500px;
     margin: auto;
-    display: block;
+    
     border-radius: 50%;
     box-shadow: 0 0 30px rgb(0, 114, 114);
     border: 50px solid rgb(0, 114, 114);
-    transform: translateY(25%);
+    vertical-align: center;
+    margin-top: 130px;
     position: relative;
 
 }
@@ -338,9 +342,11 @@ html, body {
     text-align: center;
     font-size: 85px;
     margin: auto;
-    display: block;
-    transform: translateY(150%);
+    vertical-align: center;
+    margin-top: 150px;
+    
     font-family: 'updock', serif;
+    
 }
 
 
@@ -427,7 +433,7 @@ input[type=submit]:hover {
     transform: translateY(50px);
 }
 #words h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Space Mono', monospace;
     
 }
 
@@ -502,6 +508,9 @@ h1{
     font-family: monospace;
     
 }
+button:hover{
+    box-shadow: 0 0 15px crimson;
+}
 .fluid-container{
     padding-right: 15px;
     padding-left: 15px;
@@ -537,8 +546,8 @@ p{
     
     font-family: 'Times New Roman', Times, serif;
     color: black;
-    font-size: 20px;
-    font-weight:bold;
+    font-size: 18px;
+    
     
 }
 a:link{
@@ -674,7 +683,7 @@ z-index: 5;
 }
 
 
-@media only screen and (min-width: 200px) and (max-width: 800px){
+@media only screen and (min-width: 420px) and (max-width: 800px){
 #words p{
     margin: 20px;
     text-align: center;
@@ -692,7 +701,6 @@ z-index: 5;
 
 .socials{
     padding: none;
-    text-align: right;
     height: 75px;
     width: 75px;
 }
@@ -714,11 +722,7 @@ z-index: 5;
     display: none;
     animation: none;
 }
-#backwrap #backmid{
-    transform: scale(70%) translateY(45%) translateX(-17.5%);
-    
 
-}
 nav ul li{
     padding: 0;
     margin: 3px;
@@ -776,6 +780,66 @@ h1{
 }
 #projectholder h1{
     
+}
+
+}
+@media only screen and (max-width: 420px){
+    #backwrap #backmid{
+    transform: translateX(-8%) scale(70%);
+    
+
+}
+#ima{
+    transform: translateY(-50%);
+    padding: 0;
+    
+}
+#developer{
+    font-family:'sedgwick ave display', cursive;
+    font-size: 35px;
+}
+h1{
+    font-size: 35px;
+   
+}
+nav ul li{
+    padding: 0;
+    margin: 3px;
+}
+#mylogo{
+    left: 5%;
+}
+.container2{
+    width: 95%;
+}
+#words p{
+    margin: 20px;
+    text-align: center;
+    transform: none;
+    display: block;
+    font-size: 18px;
+  
+    }
+#picofme{
+    max-width: 100%;
+}
+.fluid-container{
+    padding: none;
+}
+
+.socials{
+    padding: none;
+    height: 75px;
+    width: 75px;
+}
+#proj h1{
+    font-size: 27px;
+}
+.col-2{
+    transform: translateX(-20%);
+}
+#together{
+    transform: translateY(50%);
 }
 
 }
