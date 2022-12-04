@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lavishly+Yours|Ingrid+darling|Updock|Playfair+Display|Space+Mono|Press+Start+2P|Great+Vibes&effect=3d">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Glitch|Sacramento&effect=anaglyph">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-    <link rel="icon" href="RobotLogo_low.png">
+    <link rel="icon" href="images/RobotLogo_low.png">
+    <script type="module" src="./tre.js"></script>
+
 	<meta name="description" content="Looking for help building your website? Contact me, Dante Bradshaw!">
     
     <link rel="stylesheet" href="styles.css">
@@ -17,6 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <canvas></canvas>
     <div id="home">
     </div>
     
@@ -287,6 +290,95 @@
 
 
 <script>
+       import * as THREE from 'three';
+
+
+onload = function (){
+
+    
+	/*import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';*/
+	
+	s = new THREE.Scene();
+	
+	c = new THREE.PerspectiveCamera(60, window.innerWidth/ window.innerHeight, 1, 2000);
+	c.position.copy(new THREE.Vector3(0, 0, 30));
+	c.lookAt(0,0,30);
+	
+	r = new THREE.WebGLRenderer({ alpha: true });
+	r.setSize(window.innerWidth, window.innerHeight);
+	r.setClearColor(0xffffff, 0)
+	
+	document.body.appendChild(r.domElement);
+	
+ 
+ 
+ gltfLoader = new THREE.GLTFLoader();
+	
+   const mod = gltfLoader.load("https://d1a370nemizbjq.cloudfront.net/4c46b349-fb85-413d-bc40-429147a4f53c.glb", function(obj){
+	const ok = obj.scene
+	ok.scale.set(30, 30, 30)
+	ok.position.y = -50
+	   s.add(obj.scene);
+   });
+   
+cool = new THREE.TorusGeometry(12.5, 1, 50, 100)
+mat = new THREE.MeshPhongMaterial({color: 0xFFD700})
+torus = new THREE.Mesh(cool, mat);
+s.add(torus)
+
+
+amblight = new THREE.AmbientLight(/*0xff0000*/);
+	const pointLight = new THREE.PointLight(0xffffff)
+pointLight.position.set(0, 0, -5)
+const pointLight2 = new THREE.PointLight(0xffffff)
+pointLight2.position.set(0, 0, 5)
+	s.add(amblight, pointLight2);
+
+const controls = new THREE.OrbitControls(c, r.domElement);
+
+const shape = new THREE.BoxGeometry(10, 10, 10);
+const mat = new THREE.MeshPhongMaterial({color: 0xffff00})
+
+/*const box = new THREE.Mesh(shape, mat)
+const ok = new THREE.TextGeometry("Hello")
+
+s.add(box, ok)
+*/
+function moveCamera(){
+	const t = document.body.getBoundingClientRect().top;
+	/*sphere.rotation.x += 0.1;*/
+	
+	
+	/*c.position.z = t * -0.01;*/
+	c.position.z = t * -4;
+	c.position.y = t * -.2
+	if (c.position.z < 30){
+		c.position.z = 30;
+	};
+	//box.position.z += .5
+
+	c.rotation.y = t * -0.0002;
+
+}
+document.body.onscroll = moveCamera;
+animate = function (){
+		
+		/*torus.rotation.x += 0.01;*/
+	/*torus.rotation.y += 0.005;*/
+	/*torus.rotation.z += 0.01;*/
+	
+	torus.rotation.y += 0.005;
+		controls.update();
+		r.render(s, c);
+		requestAnimationFrame(animate);
+	}
+   // requestAnimationFrame(animate);
+	animate();
+	
+
+
+}
+
     
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	anchor.addEventListener("click", function(e){
@@ -313,6 +405,12 @@ var typed = new Typed(".typing", {
 		backSpeed: 60,
 		loop: true
 	});
+
+
+
+
+    
+
     
 
 </script>
