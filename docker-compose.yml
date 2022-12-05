@@ -1,0 +1,9 @@
+version: '3'
+services:
+    nginx:
+        image: nginx:latest
+        container_name: nginx-nginx-1
+        ports:
+            - "80:80"
+        volumes:
+            - ./site:/usr/share/nginx/html:ro

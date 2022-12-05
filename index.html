@@ -10,7 +10,10 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Glitch|Sacramento&effect=anaglyph">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="images/RobotLogo_low.png">
+    <script src="./node_modules/three/build/three.js"></script>
+
     <script type="module" src="./tre.js"></script>
+    
 
 	<meta name="description" content="Looking for help building your website? Contact me, Dante Bradshaw!">
     
@@ -95,9 +98,9 @@
     <div style="height: 100vh; width: 100%;" class="fluid-container">
         <div style="transform: translateY(50vh);"class="row">
             
-            <div class="col-12" style="text-align: center;">
-            <h1 id="ima">I'm <span id="developer">Dante Bradshaw</span>, <br/>And I'm a <span style="color:crimson;"class="typing"></span></h1>
-            <p id="together">Let's work together.</p>
+            <div class="col-12" style="text-align: center;" >
+            <h1 id="ima" class="white">I'm <span id="developer" class="white">Dante Bradshaw</span>, <br/>And I'm a <span style="color:crimson;"class="typing"></span></h1>
+            <p id="together" class="white">Let's work together.</p>
             <a href="mailto:plansuperior@icloud.com"><button style="background-color:crimson;color:white; font-size:25px; border-radius: 10%;font-family: 'Sedgwick Ave Display', serif; font-style: italic;">Contact Me</button>
             </a>
             </div>
@@ -289,128 +292,3 @@
 
 
 
-<script>
-       import * as THREE from 'three';
-
-
-onload = function (){
-
-    
-	/*import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';*/
-	
-	s = new THREE.Scene();
-	
-	c = new THREE.PerspectiveCamera(60, window.innerWidth/ window.innerHeight, 1, 2000);
-	c.position.copy(new THREE.Vector3(0, 0, 30));
-	c.lookAt(0,0,30);
-	
-	r = new THREE.WebGLRenderer({ alpha: true });
-	r.setSize(window.innerWidth, window.innerHeight);
-	r.setClearColor(0xffffff, 0)
-	
-	document.body.appendChild(r.domElement);
-	
- 
- 
- gltfLoader = new THREE.GLTFLoader();
-	
-   const mod = gltfLoader.load("https://d1a370nemizbjq.cloudfront.net/4c46b349-fb85-413d-bc40-429147a4f53c.glb", function(obj){
-	const ok = obj.scene
-	ok.scale.set(30, 30, 30)
-	ok.position.y = -50
-	   s.add(obj.scene);
-   });
-   
-cool = new THREE.TorusGeometry(12.5, 1, 50, 100)
-mat = new THREE.MeshPhongMaterial({color: 0xFFD700})
-torus = new THREE.Mesh(cool, mat);
-s.add(torus)
-
-
-amblight = new THREE.AmbientLight(/*0xff0000*/);
-	const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(0, 0, -5)
-const pointLight2 = new THREE.PointLight(0xffffff)
-pointLight2.position.set(0, 0, 5)
-	s.add(amblight, pointLight2);
-
-const controls = new THREE.OrbitControls(c, r.domElement);
-
-const shape = new THREE.BoxGeometry(10, 10, 10);
-const mat = new THREE.MeshPhongMaterial({color: 0xffff00})
-
-/*const box = new THREE.Mesh(shape, mat)
-const ok = new THREE.TextGeometry("Hello")
-
-s.add(box, ok)
-*/
-function moveCamera(){
-	const t = document.body.getBoundingClientRect().top;
-	/*sphere.rotation.x += 0.1;*/
-	
-	
-	/*c.position.z = t * -0.01;*/
-	c.position.z = t * -4;
-	c.position.y = t * -.2
-	if (c.position.z < 30){
-		c.position.z = 30;
-	};
-	//box.position.z += .5
-
-	c.rotation.y = t * -0.0002;
-
-}
-document.body.onscroll = moveCamera;
-animate = function (){
-		
-		/*torus.rotation.x += 0.01;*/
-	/*torus.rotation.y += 0.005;*/
-	/*torus.rotation.z += 0.01;*/
-	
-	torus.rotation.y += 0.005;
-		controls.update();
-		r.render(s, c);
-		requestAnimationFrame(animate);
-	}
-   // requestAnimationFrame(animate);
-	animate();
-	
-
-
-}
-
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-	anchor.addEventListener("click", function(e){
-		e.preventDefault();
-		document.querySelector(this.getAttribute("href")).scrollIntoView({
-			behavior: "smooth"
-		});
-	});
-});
-
-const d = new Date();
-const year = document.getElementById('year')
-year.innerHTML = d.getFullYear();
-
-var typed = new Typed(".typing", {
-		strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer"],
-		typeSpeed: 100,
-		backSpeed: 60,
-		//loop: true
-	});
-    var typed = new Typed(".typing2", {
-		strings: ["Committed", "Dedicated", "Communicative"],//, "Software Engineer", "Designer", "Freelancer"],
-		typeSpeed: 100,
-		backSpeed: 60,
-		loop: true
-	});
-
-
-
-
-    
-
-    
-
-</script>

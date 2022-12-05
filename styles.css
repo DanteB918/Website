@@ -5,8 +5,14 @@ canvas {
     top: 0;
     left: 0;
     z-index: -9999;
-    background: cyan;
-  }
+    background: url(./images/space.png);
+    background-size:cover;
+ }
+.white{
+    color: white;
+}
+  
+
 .socials{
     
     height: 125px;
