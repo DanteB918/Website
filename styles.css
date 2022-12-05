@@ -7,6 +7,8 @@ canvas {
     z-index: -9999;
     background: url(./images/space.webp);
     background-size:cover;
+    overflow : scroll;
+
  }
 .white{
     color: white;

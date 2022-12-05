@@ -38,7 +38,31 @@ s.add(box, ok)
 const cool = new THREE.TorusGeometry(12.5, 1, 50, 100)
 const mat = new THREE.MeshPhongMaterial({color: 0xFFD700})
 const torus = new THREE.Mesh(cool, mat);
+
+const tloader = new THREE.TextureLoader();
+
+const texture1 = tloader.load('./images/erth-texture.jpg');
+const uniforms = {
+    texture1: { value: texture1 },
+};
+
 //s.add(torus)
+
+const sphereMaterial = new THREE.MeshBasicMaterial({ map: texture1 });
+const sphereGeometry = new THREE.SphereGeometry( 15, 15, 15 );
+
+const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+sphere.position.z = -30;
+if (this.window.innerWidth >= 1700){
+	sphere.position.x = 50;
+}
+else
+sphere.position.x = 5;
+sphere.rotation.x = 6.8;
+
+//sphere.position.y = 30;
+
+s.add(sphere);
 
 const gltfLoader = new GLTFLoader();
 
@@ -81,6 +105,7 @@ function moveCamera(){
 	
 	/*c.position.z = t * -0.01;*/
 	//c.position.z = t * -4;
+
 	c.position.y = t * -.03
 	//torus.rotation.y += 0.0001;
 	/*if (c.position.z < 30){
@@ -95,11 +120,14 @@ document.body.onscroll = moveCamera;
 var clock = new THREE.Clock();
 
 const animate = function (){
+	const t = document.body.getBoundingClientRect().top;
+
     
 		/*torus.rotation.x += 0.01;*/
 	/*torus.rotation.y += 0.005;*/
 	/*torus.rotation.z += 0.01;*/
-	
+	sphere.rotation.y += -.005;
+	sphere.position.y = t * -.03
 
 		r.render(s, c);
 		requestAnimationFrame(animate);
