@@ -1,5 +1,6 @@
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js";
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/DRACOLoader.js";
 
 
 
@@ -8,7 +9,7 @@ onload = function (){
 	
 	const s = new THREE.Scene();
 	
-	const c = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 2000);
+	const c = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight , 1, 2000);
 	c.position.copy(new THREE.Vector3(0, 0, 30));
 	c.lookAt(0,0,30);
 	
@@ -46,6 +47,9 @@ const gltfLoader = new GLTFLoader();
 
 let mixer = THREE.AnimationMixer;
 
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderPath( './node_modules/three/examples/js/libs/draco/' );
+gltfLoader.setDRACOLoader( dracoLoader );
 
 
    gltfLoader.load("./waving.glb", function(obj){
@@ -56,11 +60,11 @@ let mixer = THREE.AnimationMixer;
 	
 
 	   s.add(obj.scene);
-	   var mixer = new THREE.AnimationMixer(wave);
+	   /*var mixer = new THREE.AnimationMixer(wave);
 	   const clips = obj.animations;
 	   const clip = THREE.AnimationClip.findByName(clips, 'RetopoGroup2Action.002');
 	   const action = mixer.clipAction(clip);
-	   action.play();
+	   action.play();*/
 	   
    });
 
@@ -102,7 +106,7 @@ const animate = function (){
 	}
    // requestAnimationFrame(animate);
 	animate();
-	r.setAnimationLoop(animate);
+	// r.setAnimationLoop(animate);
 
 
 }

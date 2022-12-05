@@ -5,12 +5,15 @@ canvas {
     top: 0;
     left: 0;
     z-index: -9999;
-    background: url(./images/space.png);
+    background: url(./images/space.webp);
     background-size:cover;
  }
 .white{
     color: white;
 }
+/*body{
+    background: url(./images/space.webp);
+ }*/
   
 
 .socials{
