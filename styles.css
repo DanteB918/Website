@@ -1,7 +1,7 @@
 canvas {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -9999;
@@ -13,9 +13,15 @@ canvas {
 .white{
     color: white;
 }
+.work{
+    text-align:center;
+}
 /*body{
     background: url(./images/space.webp);
  }*/
+ body{
+    overflow-x: hidden;
+ }
   
 
 .socials{
@@ -588,11 +594,7 @@ nav ul li{
     
 
 }
-#ima{
-    transform: translateY(-50%);
-    padding: 0;
-    
-}
+
 .sm-none{
     display: none !important;
 }
