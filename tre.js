@@ -127,7 +127,7 @@ const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader( dracoLoader );
 
 
-   gltfLoader.load("./pose.glb", function(obj){
+   gltfLoader.load("./dante1.glb", function(obj){
 	const wave = obj.scene;
 	window.wave = wave;
 	wave.scale.set(30, 30, 30)
@@ -224,7 +224,7 @@ year.innerHTML = d.getFullYear();
 
 var typed = new Typed(".typing", {
 		strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer"],
-		typeSpeed: 100,
+		typeSpeed: 150,
 		backSpeed: 60,
 		//loop: true
 	});
