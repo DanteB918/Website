@@ -127,7 +127,7 @@ const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader( dracoLoader );
 
 
-   gltfLoader.load("./dante1.glb", function(obj){
+   gltfLoader.load("./dantez.glb", function(obj){
 	const wave = obj.scene;
 	window.wave = wave;
 	wave.scale.set(30, 30, 30)
