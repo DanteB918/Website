@@ -1,15 +1,91 @@
-canvas {
-    width: 100%;
-    height: 100%;
-    position: fixed;
+
+body {
+  margin:0;
+}
+
+
+
+.custom-shape-divider-top-1672510980 {
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: -9999;
-    background: url(./images/space.webp);
-    background-size:cover;
-    overflow : scroll;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
- }
+.custom-shape-divider-top-1672510980 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 302px;
+}
+
+.custom-shape-divider-top-1672510980 .shape-fill {
+    fill: #EFEFF0;
+}
+
+
+.waves {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: rgba(0,0,0,1);
+}
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
 .white{
     color: white;
 }
@@ -93,8 +169,8 @@ html, body {
 }*/
 
 @keyframes to-load{
-    0%{box-shadow: 0 0 5px cyan;}
-    100%{box-shadow: 0 0 100px cyan;}
+    0%{box-shadow: 0 0 5px crimson;}
+    100%{box-shadow: 0 0 100px crimson;}
 }
 @keyframes to-disappear{
     0%{ opacity: 1;}
@@ -103,13 +179,11 @@ html, body {
 .work{
     width: 500px;
 }
-.work:hover{
-    transform: scale(1.1);
-}
+
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px; 
-  border: 1px solid cyan; 
+  border: 1px solid black; 
   border-radius: 4px; 
   box-sizing: border-box; 
   margin-top: 6px; 
@@ -119,7 +193,7 @@ input[type=text], select, textarea {
 input[type=email], select, textarea {
   width: 100%; 
   padding: 12px; 
-  border: 1px solid cyan; 
+  border: 1px solid black; 
   border-radius: 4px; 
   box-sizing: border-box; 
   margin-top: 6px; 
@@ -127,20 +201,28 @@ input[type=email], select, textarea {
   resize: vertical 
 }
 input[type=submit] {
-  background-color: cyan;
-  color: darkcyan;
+  background-color: crimson;
+  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border: 1px solid black;
 }
 input[type=submit]:hover {
-  background-color: crimson;
+  transition: .2s;
+  background: transparent;
+  border: 1px solid crimson;
+  color: black;
+
 }
 .container2 {
   border-radius: 5px;
-  background-color: darkcyan;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 1px solid rgba(255, 255, 255, 0.23);  padding: 20px;
   margin: auto;
   width: 50%;
   height: auto;
@@ -228,9 +310,7 @@ h1{
     font-family: monospace;
     
 }
-button:hover{
-    box-shadow: 0 0 15px crimson;
-}
+
 .fluid-container{
     padding-right: 15px;
     padding-left: 15px;
@@ -241,18 +321,27 @@ button:hover{
     list-style-type: none;
 }
 #proj{
-    font-family: 'press start 2p', 'serif';
+    font-family: 'Sedgwick Ave Display', serif;
     color: white;
 }
 #body2{
-    background-color:cadetblue;
-    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(333deg, rgba(0,0,0,0.5) 45%, rgba(0,0,0,1) 100%);  
+    color: white;
+             
+width: 100%;
    
     text-align: center;
 }
 #body2 h1{
     transform: none;
 }
+footer{
+    background: rgb(0,0,0);
+    background: linear-gradient(333deg, rgba(0,0,0,0.5) 45%, rgba(0,0,0,1) 100%);  
+    color: white;
+}
+
 #title{
     font-family: 'Tangerine', serif;
     text-align: center;
@@ -260,8 +349,9 @@ button:hover{
     
 }
 body{
-    background-color: lightslategray;
-}
+    background: rgb(0,0,0);
+    background: linear-gradient(333deg, rgba(0,0,0,0.5) 45%, rgba(0,0,0,1) 100%);
+    }
 p{
     
     font-family: 'Times New Roman', Times, serif;
@@ -270,20 +360,22 @@ p{
     
     
 }
+
 a:link{
     text-decoration: none;
 }
 #mylogo{
     height: 50px;
     width: 50px;
-    background-color: cyan;
+    background-color: crimson;
     border-radius: 50%;
     position: relative;
-    box-shadow: 0 0 40px cyan;
+    box-shadow: 0 0 40px crimson;
     font-size: 42.5px;
     font-family: 'updock', serif;
     float: left;
     left: 75px;
+    color: white;
 
 }
 #mylogo:hover{
@@ -310,7 +402,14 @@ nav ul{
 	font-family: monospace;
 
 }
+li i{
+    color: crimson;
+}
+.icon-name{
+    color: black;
+}
 nav li{
+    
     float: right;
 	/*border: 1px solid black;
 	border-radius: 20px;*/
@@ -319,7 +418,7 @@ nav li{
    
 }
 nav li:hover{
-    background-color: crimson;
+    background-color: darkgray;
     /*box-shadow: 0 0 15px limegreen;*/
 }
 
@@ -333,12 +432,64 @@ nav ul li{
 }
 #Me{
     text-align: center;
-    width: 500px;
-    
-    position: relative;
-    display: block;
-    margin: auto;
 }
+#Me{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom:75px;
+    overflow: hidden;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 7px #bebebe,
+             -20px -20px 7px #ffffff;
+             border-radius: 50px;
+}
+
+#picofme{
+    max-width: 100%;
+    
+
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    background: #131313;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    position: relative;
+    font-weight: 400;
+    border-radius:50px;
+    color: #FFFFFF;
+    transition: all 0.4s ease-in-out;
+  }
+  .btn .greet {
+    display: block;
+    font-size: 0;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    word-spacing:2px;
+  }
+  .btn i {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .btn:hover {
+    font-size: 18px;
+    background: #131313;
+    width: 150px;
+    height: 50px;
+    line-height: 1px;
+  }
+  .btn:hover .greet {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 0px;
+  }
+  .btn:hover i{
+    font-size: 0;
+  }
 .logoskill{
     transition: transform .2s;
 }
@@ -509,9 +660,7 @@ h1{
 	font-family: none;
 	font-size: 40px;
 }
-#Me{
-  
-}
+
 #projectholder{
 }
 #projectholder h1{
@@ -520,6 +669,10 @@ h1{
 
 }
 @media only screen and (min-width: 376px) and (max-width: 420px){
+
+
+
+
     #backwrap #backmid{
     transform: translateX(-10%) scale(70%);
     

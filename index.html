@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
-
-
-        <script src="https://kit.fontawesome.com/bc1cce9757.js" crossorigin="anonymous" defer></script> <!--Icons--> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" defer></script><!--typing effect-->
-	<meta name="google-site-verification" content="NVUEDYcgOur7XV08emK91k4JORGcnAe1j4iIHnbo2_I" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lavishly+Yours|Ingrid+darling|Updock|Playfair+Display|Space+Mono|Press+Start+2P|Great+Vibes&effect=3d">
+        <!--Jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Paroller-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js" integrity="sha512-jYedLgTWxBXtDBdGhnUgCgbgQ5j450R2LhxXk1G+pBcbaARaEC/qsrIhOtqAAiY7UBylc6bVGH6EFR10RNBXuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Hover.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--Slick Slider--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!--Font awesome Icons-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--typing effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" defer></script>
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lavishly+Yours|Ingrid+darling|Updock|Playfair+Display|Space+Mono|Press+Start+2P|Great+Vibes&effect=3d">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Glitch|Sacramento&effect=anaglyph">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/RobotLogo_low.png">
 
-    <script type="module" src="./tre.js" defer="defer"></script>
-    
-    <meta charset="UTF-8">
-	<meta name="description" content="Looking for help building your website? Contact me, Dante Bradshaw!">
-    
+
+    <!--Import styles & JS-->
     <link rel="stylesheet" href="styles.css">
+    <script src="./tre.js" defer="defer"></script>
+    <!--SEO-->
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/RobotLogo_low.png">
+	<meta name="description" content="Looking for help building your website? Contact me, Dante Bradshaw!">
+    <meta name="keywords" content="website, web developer, developer, make website, software developer">
+    <meta name="google-site-verification" content="NVUEDYcgOur7XV08emK91k4JORGcnAe1j4iIHnbo2_I" />
     <title>Dante Bradshaw</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>
-        <canvas></canvas>
+        
+<!--Static waves on top of page.-->
+<div class="custom-shape-divider-top-1672510980">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
     <div id="home">
     </div>
+    
     
         <!--<div id="loadwrapper">
             <div id="Loaderimg">
@@ -40,16 +65,16 @@
             <ul>
         <div id="mylogo">D</div>
         <li class="icon-li">
-            <a href="#home"><i class="fas fa-home"><span class="icon-name">Home</span></i></a>
+            <a href="#home"><i class="fas fa-home"></i><span class="icon-name">Home</span></a>
         </li>
         <li class="icon-li">
-            <a href="#contact"><i class="fas fa-id-card"><span class="icon-name">Contact</span></i></a>
+            <a href="#contact"><i class="fas fa-id-card"></i><span class="icon-name">Contact</span></a>
         </li>
         <!--<li class="icon-li">
             <a href="#skills"><i class="fas fa-laptop-code"><span class="icon-name">Skills</span></i></a>
         </li>-->
         <li class="icon-li">
-            <a href="#project"><i class="fas fa-laptop-code"><span class="icon-name">Projects</span></i></a>
+            <a href="#project"><i class="fas fa-laptop-code"></i><span class="icon-name">Projects</span></a>
         </li>
             </ul>
         </nav>
@@ -82,46 +107,52 @@
                     </div>-->
                 </div>
         </div>
-        
-           <!--<div class="row">
-                <div class="col-12">
-                    <div id="titleholder">
-                        <div class="font-effect-anaglyph">--> 
-                            <!--<h1 id="title">Dante Bradshaw
-                            </h1>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
+       
         </div>
     </div>
     
-    <div style="height: 100vh; width: 100%;" class="fluid-container">
+    <div style="height: 100vh; width: 100%;" class="fluid-container" align="center">
         <div style="transform: translateY(50vh);"class="row">
             
             <div class="col-12" style="text-align: center;" >
             <h1 id="ima" class="white">I'm <span id="developer" class="white">Dante Bradshaw</span>, <br/>And I'm a <span style="color:crimson;"class="typing"></span></h1>
             <p id="together" class="white">Let's work together.</p>
-            <a href="mailto:plansuperior@icloud.com"><button style="background-color:crimson;color:white; font-size:25px; border-radius: 10%;font-family: 'Sedgwick Ave Display', serif; font-style: italic;">Contact Me</button>
+            <a href="mailto:plansuperior@icloud.com">    <button class="btn"><span class="greet">Contact Me</span><i class="fa-solid fa-envelope"></i></button>
             </a>
             </div>
             <div id="skills">
                 <h2></h2>
         </div>
+       
         
        
         
             
     
-    
+      
     </div>
+    <!--Moving Waves bottom of Hero Section-->
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(239,239,240,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(239,239,240,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(239,239,240,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(239,239,240,1)" />
+    </g>
+    </svg>
 </div>
-    <div style="background-color: darkgray; margin-bottom: 10%; padding-bottom: 2%;" class="fluid-container">
+
+    <div style="background-color: rgba(239,239,240, 1); margin-bottom: 2%; padding-bottom: 2%;" class="fluid-container" align="center">
     <div class="row">
-        <h1 align="center" style="color:white; font-family: Sedgwick Ave Display, serif; padding-top: 20px;">About Me</h1>
+        <h1 align="center" style="color:black; font-family: Sedgwick Ave Display, serif; padding-top: 20px;" class="parolle">About Me</h1>
         <h3 align="center"><span style="color:crimson;"class="typing2"></span></h3>
         <div id="Me" class="col-lg-6">
             <img id="picofme" src="images/picofmenew.webp" height = "450px" alt="Dante Bradshaw" width = "400px"/>
+
         </div>
         <div id="words" class="col-lg-6">
             <div class="row offset-1">
@@ -141,17 +172,25 @@
                     <a href="https://vk.com/id571437082" target="_blank"><img src="images/vk.png" alt="socials" class="socials"/></a>
                 </div>
             </div>
-            <h3 align="center" style="padding-top: 20px;"><u>Biography</u> <span style="color: crimson; font-family: 'playfair display', serif; font-size: 30px; line-height: 20px;">&amp; </span><u>Info</u></h3><br/>
-            <p>
-                Hello, my name is Dante Bradshaw. I’m a self-taught developer from Rehoboth Beach, Delaware. I have an associates degree in Elementary Education from Delaware Technical Community College. Not long after working within the school system, I figured out that I didn’t have a passion for teaching, but a passion for learning. I’ve always been obsessed with learning things. Such as, chess, playing guitar, or even how to solve a Rubik’s Cube.<br/>
+            <h3 align="center" style="padding-top: 20px;" class="parolle"><u>Biography</u> <span style="color: crimson; font-family: 'playfair display', serif; font-size: 30px; line-height: 20px;">&amp; </span><u>Info</u></h3><br/>
+            <p class="parolle">
+                A self-taught software engineer born and raised in Rehoboth Beach,
+                Delaware. I’ve worked as a Web Developer since June of 2022, and as I've
+                been working, I've been polishing my coding and problem-solving skills.
+                Working with both the command line and code has been my greatest
+                hobby and continues to allow me to bring my imagination to reality.
+                I've become adept in the language syntax of Javascript, Python and PHP
+                as well as the line command structure of Linux operating systems. I'd like
+                a place to polish my problem-solving skills and be of use to a team. I take
+                a great interest in creating & learning new things.<br/>
                 
 
             </p>
-            <p align="center"><span style="font-family: 'Space Mono', monospace;font-size: 30px; text-align: center; ">Here are some things I've <span style="color: cyan;">learned</span> along the way.</span></p>
+            <p align="center" class="parolle"><span style="font-family: 'Space Mono', monospace;font-size: 30px; text-align: center; ">Here are some things I've <span style="color: crimson;">learned</span> along the way.</span></p>
             
         </div>
     </div>
-    <div class="d-flex flex-row offset-1 my-4 d-lg-none">
+    <div class="d-flex flex-row offset-1 my-4 d-lg-none ">
         <div class="row d-lg-none">    
         <div class="col-md-1 col-sm-3 logoskill"><img src = "images/pythonlogo.png" height = "75px" width = "75px" alt="Python"/></div>
         <div class="col-md-1 col-sm-3 logoskill"><img src = "images/htmllogo.webp" height = "75px" width = "75px" alt="HTML" /></div>
@@ -199,18 +238,45 @@
     <div class="col-md-1 logoskill bigskill"><img src = "images/jekyll.webp" height = "75px" alt="Jekyll Static Site Generator"/></div>
 </div>
 
+
+
+
+
+
 </div>
+
+
+
+
+
+<!--Big Wave Behind Projects-->
+<svg xmlns="http://www.w3.org/2000/svg" id="BigWave" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;z-index:-1;position:absolute; width: 100vw; "  preserveAspectRatio="xMidYMid" viewBox="0 0 1700 808" >
+    <g transform="translate(960,404) scale(1,1) translate(-960,-404)"><linearGradient id="lg-0.924656297982968" x1="0" x2="1" y1="0" y2="0">
+      <stop stop-color="#0a0a0a" offset="0"></stop>
+      <stop stop-color="#28292f" offset="1"></stop>
+    </linearGradient><path d="" fill="url(#lg-0.924656297982968)" opacity="0.4">
+      <animate attributeName="d" dur="9.090909090909092s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="0s" values="M0 0M 0 708.9598690075359Q 192 693.910731861499 384 692.8348841559288T 768 656.6418780708564T 1152 630.5725373607663T 1536 576.771056674885T 1920 627.3593000187334L 1920 186.23808007579098Q 1728 221.6547842765271 1536 213.5024246863915T 1152 157.87483995412776T 768 137.00088087367052T 384 65.20573768671332T 0 108.41939165654301Z;M0 0M 0 754.928700027972Q 192 662.0329028698752 384 652.2172647846194T 768 706.9513959899607T 1152 682.1092208910807T 1536 628.6009460546817T 1920 614.1651567142403L 1920 200.1548782285206Q 1728 164.4774395756361 1536 162.16189662506625T 1152 192.42762028920635T 768 131.9863581992201T 384 139.0999619611278T 0 116.29264543823558Z;M0 0M 0 759.8838833959913Q 192 735.5486714908465 384 729.1215038536737T 768 670.0626378259001T 1152 607.4173273606872T 1536 638.8908157459111T 1920 562.5165511329275L 1920 230.85402166657724Q 1728 191.33469206353402 1536 182.67751209573737T 1152 132.89611638674938T 768 176.44396579699657T 384 108.37360100273594T 0 103.22757050201963Z;M0 0M 0 708.9598690075359Q 192 693.910731861499 384 692.8348841559288T 768 656.6418780708564T 1152 630.5725373607663T 1536 576.771056674885T 1920 627.3593000187334L 1920 186.23808007579098Q 1728 221.6547842765271 1536 213.5024246863915T 1152 157.87483995412776T 768 137.00088087367052T 384 65.20573768671332T 0 108.41939165654301Z"></animate>
+    </path><path d="" fill="url(#lg-0.924656297982968)" opacity="0.4">
+      <animate attributeName="d" dur="9.090909090909092s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="-2.272727272727273s" values="M0 0M 0 770.6209509787828Q 192 661.1540816338122 384 651.3445524952984T 768 637.7079682576477T 1152 624.7807389087247T 1536 648.9879490643335T 1920 541.5058861905438L 1920 253.42198128120927Q 1728 231.60822586315302 1536 226.7262843317092T 1152 200.446993180064T 768 175.09648853740345T 384 61.8576287944706T 0 46.69624254833269Z;M0 0M 0 768.1958521853387Q 192 664.8554472976183 384 661.6357009549606T 768 685.2524562085889T 1152 597.7016122245428T 1536 646.8307156758283T 1920 598.3162146538458L 1920 205.26989133702259Q 1728 162.32821350136066 1536 153.79085307058438T 1152 210.45899632533855T 768 106.24239693640405T 384 107.14315393613597T 0 79.1456643455262Z;M0 0M 0 681.5141920574107Q 192 677.0337537481738 384 674.0436684770144T 768 657.1595178151606T 1152 655.779949842822T 1536 608.2440559001482T 1920 580.7483599201781L 1920 255.62377331516365Q 1728 207.26832549932843 1536 205.2600728403419T 1152 169.69251480099302T 768 125.28421326581278T 384 106.7356739831302T 0 39.07665493942778Z;M0 0M 0 770.6209509787828Q 192 661.1540816338122 384 651.3445524952984T 768 637.7079682576477T 1152 624.7807389087247T 1536 648.9879490643335T 1920 541.5058861905438L 1920 253.42198128120927Q 1728 231.60822586315302 1536 226.7262843317092T 1152 200.446993180064T 768 175.09648853740345T 384 61.8576287944706T 0 46.69624254833269Z"></animate>
+    </path><path d="" fill="url(#lg-0.924656297982968)" opacity="0.4">
+      <animate attributeName="d" dur="9.090909090909092s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="-4.545454545454546s" values="M0 0M 0 685.0659725348004Q 192 742.0153896147391 384 735.6594246379785T 768 660.2356911303493T 1152 645.6973302410171T 1536 639.0421997563803T 1920 567.6893984632243L 1920 210.39820323666112Q 1728 216.88226315015797 1536 214.66229434118557T 1152 125.7371672451268T 768 128.5814310498732T 384 157.4790562812731T 0 98.02436833210203Z;M0 0M 0 707.6258048610482Q 192 708.4369206392338 384 698.7654956641755T 768 643.2394714599207T 1152 609.3396178924652T 1536 592.3794648750447T 1920 572.5653833474516L 1920 273.42723636639505Q 1728 193.12081926022893 1536 191.52398300103857T 1152 132.5008396537121T 768 95.0684890281218T 384 131.15239424992325T 0 107.63574106909519Z;M0 0M 0 691.8268689697811Q 192 731.1714854259544 384 725.1948784537727T 768 716.4807304945755T 1152 658.1612084127152T 1536 599.5290053903989T 1920 602.8040011409026L 1920 248.65178009410457Q 1728 168.76536713773174 1536 162.01179177735858T 1152 185.87271532895716T 768 158.3045989757011T 384 87.58688857732747T 0 41.38420555345823Z;M0 0M 0 685.0659725348004Q 192 742.0153896147391 384 735.6594246379785T 768 660.2356911303493T 1152 645.6973302410171T 1536 639.0421997563803T 1920 567.6893984632243L 1920 210.39820323666112Q 1728 216.88226315015797 1536 214.66229434118557T 1152 125.7371672451268T 768 128.5814310498732T 384 157.4790562812731T 0 98.02436833210203Z"></animate>
+    </path><path d="" fill="url(#lg-0.924656297982968)" opacity="0.4">
+      <animate attributeName="d" dur="9.090909090909092s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcmod="spline" keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1" begin="-6.818181818181818s" values="M0 0M 0 688.8118936906712Q 192 660.3051827390306 384 655.8674963110974T 768 650.6646945777366T 1152 613.5614793378525T 1536 655.3108271536883T 1920 600.0631156949469L 1920 182.25048203412632Q 1728 235.99567533478992 1536 231.53777095884342T 1152 178.46637659027647T 768 128.78205905218428T 384 127.519711330701T 0 128.33567371360868Z;M0 0M 0 755.1644511161857Q 192 736.1177993164619 384 733.6357626011356T 768 695.1867983682778T 1152 676.8140059316827T 1536 656.8190279126632T 1920 598.5578749787551L 1920 229.89239431349253Q 1728 236.33716700139954 1536 234.15473218481563T 1152 135.5334114003159T 768 154.35089542750168T 384 129.40627646584716T 0 74.35144697848435Z;M0 0M 0 717.4352508888468Q 192 718.8612245309363 384 718.6241364547407T 768 688.4872631290232T 1152 655.3190391333452T 1536 639.2877765599967T 1920 617.6608236995173L 1920 250.69075891319508Q 1728 223.4488991578646 1536 213.91769902378545T 1152 151.6326321184036T 768 157.7577161060543T 384 152.7756329187736T 0 103.28833160221143Z;M0 0M 0 688.8118936906712Q 192 660.3051827390306 384 655.8674963110974T 768 650.6646945777366T 1152 613.5614793378525T 1536 655.3108271536883T 1920 600.0631156949469L 1920 182.25048203412632Q 1728 235.99567533478992 1536 231.53777095884342T 1152 178.46637659027647T 768 128.78205905218428T 384 127.519711330701T 0 128.33567371360868Z"></animate>
+    </path></g>
+    </svg>
+    
 <div class="container" id="project" style="padding-bottom: 5%;">
     <div class="row"><div id="proj">
         <h1 align="center">
         Projects
         </h1>
     </div></div>
+    
 </div>
 
 
 
-<div style=" margin-bottom: 5%;"class="fluid-container">
+<div style=" margin-bottom: 5%;"class="fluid-container" align="center">
 
 
         <!--<div id="RoboLogo"><img src="RobotLogo_low.png" height="150px" width="150px" /></div>-->
@@ -222,10 +288,10 @@
                 
             </div>
         </div>
-        <div class="row white" style=" padding-bottom: 2%;">
+        <div class="row white slick-slider"  style="padding-bottom: 2%; display: flex; justify-content: center;">
             <div class="col-xl-4 col-md-12 text-center"  align="center">
                 <h1>Static website</h1>
-                <p class="white">created with solely HTML and CSS.</p>
+                <p class="white">created with solely HTML and CSS.<br><br></p>
                 <a href="https://ajurney.ml" target="_blank">
                 <img src="images/ajurney.webp" alt="Amber Jurney's Website, www.ajurney.ml" class="work"/>
                 </a>
@@ -239,21 +305,19 @@
             </div>
             <div class="col-xl-4 col-md-12 text-center" align="center">
                 <h1>Title</h1>
-                <p class="white">Work in progress</p>
+                <p class="white">Work in progress<br><br></p>
                 <img src="images/FillerImage.jpg" alt="Filler Image"  class="work"/>
             </div>
         </div>
         
-    </div>
+</div>
             
     <div id="body2">
             <span id="contact">
-                <div class="font-effect-anaglyph">
                 <h1 id = "contactwords">Contact me</h1>
-                </div>
                 </span>
                 <h2>I would love to work with you!</h2>
-                <h2>plansuperior@icloud.com<h2>
+                <h2>plansuperior@icloud.com</h2>
                 
     </div>
    
@@ -282,20 +346,17 @@
         </form>
       </div>
 
-      
-      <div class="fluid-container">
+      <div class="fluid-container" style="width: 100%;">
           <div class="row">
-      <footer id="footer" style="background-color:rgb(0, 114, 114); padding-top: 1%;padding-bottom: 3%; text-align: center; transform: translateY(25%);">
-        Created <a href="Https://dantebradshaw.tk" style="color: crimson;">Dante Bradshaw</a> |  ©<span id="year"></span> <br/>All rights reserved.
-        </footer>
+            <footer id="footer" style=" padding-top: 1%;padding-bottom: 3%; text-align: center; transform: translateY(25%);">
+                Created <a href="Https://dantebradshaw.tk" style="color: crimson;">Dante Bradshaw</a> |  ©<span id="year"></span> <br/>All rights reserved.
+                </footer>
+        </div>
     </div>
-    </div>
-</div>
 
    
     
         </body>
 </html>
-
 
 
