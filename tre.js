@@ -26,6 +26,7 @@ $('.slick-slider').slick({
 	autoplay: true,
 	arrows: false,
 	autoplaySpeed: 2000,
+	speed: 500,
 	responsive: [
 		{
 			breakpoint: 1589,
@@ -57,8 +58,11 @@ me.paroller({ factor: 0.1, type: 'foreground', direction: 'vertical',  });
 
 	$('.parolle').paroller({ factor: .2, factorXs: .1, type: 'foreground', direction: 'vertical',  });
 
-//Making Waves adjust to bottom of screen for Iphones.
-const updateViewportHeight = () => {
+
+
+
+	//Making Waves adjust to bottom of screen for Iphones.
+/*const updateViewportHeight = () => {
 	document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
 	const BotWaves = $('#theWave');
 	BotWaves[0].style.bottom = '0px';
@@ -66,7 +70,7 @@ const updateViewportHeight = () => {
 	
 	window.addEventListener('resize', updateViewportHeight);
 	
-	updateViewportHeight();
+	updateViewportHeight();*/
 
 
 
