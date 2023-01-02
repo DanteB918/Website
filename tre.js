@@ -2,6 +2,31 @@
 const d = new Date();
 const year = document.getElementById('year')
 year.innerHTML = d.getFullYear();
+$('.icon-li').hide();
+$('.mob-menu').hide();
+
+$(document).ready(function(){
+	$(".hamburger").click(function(){
+	  $(this).toggleClass("is-active");
+	  $('.mob-menu').fadeIn(400);
+	  document.querySelector('.mob-menu').style.zIndex = '9998';
+	  document.querySelector('.hamburger').style.zIndex = '9999';
+	  $('.icon-li').fadeIn(900);
+	  if ( document.querySelector('#hamburger').classList.contains('is-active') == false){
+		$('.icon-li').fadeOut();
+		$('.mob-menu').fadeOut();
+
+	  }
+	});
+  });
+
+function stopShow(){
+	$('.icon-li').fadeOut();
+	$('.mob-menu').fadeOut();
+	$('#hamburger').toggleClass("is-active");
+
+}
+
 
 
 

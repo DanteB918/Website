@@ -60,20 +60,46 @@
         <nav id= "bar">
             <ul>
         <div id="mylogo">D</div>
-        <li class="icon-li">
-            <a href="#home"><i class="fas fa-home"></i><span class="icon-name">Home</span></a>
-        </li>
-        <li class="icon-li">
-            <a href="#contact"><i class="fas fa-id-card"></i><span class="icon-name">Contact</span></a>
-        </li>
-        <!--<li class="icon-li">
-            <a href="#skills"><i class="fas fa-laptop-code"><span class="icon-name">Skills</span></i></a>
-        </li>-->
-        <li class="icon-li">
-            <a href="#project"><i class="fas fa-laptop-code"></i><span class="icon-name">Projects</span></a>
-        </li>
+        <div class="desk-only">
+            <li class="icon-li">
+                <a href="#home"><i class="fas fa-home"></i><span class="icon-name">Home</span></a>
+            </li>
+            <li class="icon-li">
+                <a href="#contact"><i class="fas fa-id-card"></i><span class="icon-name">Contact</span></a>
+            </li>
+            <!--<li class="icon-li">
+                <a href="#skills"><i class="fas fa-laptop-code"><span class="icon-name">Skills</span></i></a>
+            </li>-->
+            <li class="icon-li">
+                <a href="#project"><i class="fas fa-laptop-code"></i><span class="icon-name">Projects</span></a>
+            </li>
+        </div>
+
+        <div class="mob-only">
+                <div class="hamburger" id="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                     
+                    <ul class="mob-menu">
+                        <li class="icon-li" onclick="stopShow()">
+                            <a href="#home"><i class="fas fa-home"></i><span class="icon-name">Home</span></a>
+                        </li>
+                        <li class="icon-li" onclick="stopShow()">
+                            <a href="#contact"><i class="fas fa-id-card"></i><span class="icon-name">Contact</span></a>
+                        </li>
+                        <!--<li class="icon-li">
+                            <a href="#skills"><i class="fas fa-laptop-code"><span class="icon-name">Skills</span></i></a>
+                        </li>-->
+                        <li class="icon-li" onclick="stopShow()">
+                            <a href="#project"><i class="fas fa-laptop-code"></i><span class="icon-name">Projects</span></a>
+                        </li>
+                    </ul>
+            </div>
             </ul>
         </nav>
+        
 <div class="container">
         <div class="row">
             <div id="everything">
