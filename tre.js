@@ -3,10 +3,13 @@ const d = new Date();
 const year = document.getElementById('year')
 year.innerHTML = d.getFullYear();
 
+
+
 var typed = new Typed(".typing", {
 		strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer"],
 		typeSpeed: 150,
 		backSpeed: 60,
+		startDelay: 1200
 		//loop: true
 	});
 
@@ -74,6 +77,11 @@ me.paroller({ factor: 0.1, type: 'foreground', direction: 'vertical',  });
 
 
 
+//Loader
+
+$(window).on("load", function(){
+	$('.loader').delay(1200).fadeOut('slow');
+});
 
 
 

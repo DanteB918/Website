@@ -3,7 +3,113 @@ body {
     margin:0;
   }
   
+  /*
+  *Loader Icon
+  */
+  @-webkit-keyframes building-blocks {
+      0%,
+      20% {
+        opacity: 0;
+        -webkit-transform: translateY(-300%);
+                transform: translateY(-300%); }
+      30%,
+      70% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0); }
+      90%,
+      100% {
+        opacity: 0;
+        -webkit-transform: translateY(300%);
+                transform: translateY(300%); } }
+    @keyframes building-blocks {
+      0%,
+      20% {
+        opacity: 0;
+        -webkit-transform: translateY(-300%);
+                transform: translateY(-300%); }
+      30%,
+      70% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0); }
+      90%,
+      100% {
+        opacity: 0;
+        -webkit-transform: translateY(300%);
+                transform: translateY(300%); } }
+    .loader{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: gray;
+      z-index: 9999;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+    }
   
+  
+  
+  
+  
+    @-webkit-keyframes coffee {
+      100% {
+        opacity: 0;
+        -webkit-transform: translateY(-200%);
+                transform: translateY(-200%); } }
+    @keyframes coffee {
+      100% {
+        opacity: 0;
+        -webkit-transform: translateY(-200%);
+                transform: translateY(-200%); } }
+    
+    .coffee {
+      background: #fff;
+      display: grid;
+      border-radius: 4px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      height: 100px;
+      position: relative;
+      width: 100px;
+      padding: 2px;
+      justify-items: center; }
+      .coffee:before {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        content: '';
+        height: 39px;
+        width: 30px;
+        border: 4px solid #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -13px;
+        margin-left: -10px;
+        left: 100%;
+        border-radius: 4px; }
+      .coffee div {
+        height: 40px;
+        width: 18px;
+        background: #fff;
+        opacity: .3;
+        -webkit-animation: coffee 2s infinite;
+                animation: coffee 2s infinite; }
+      .coffee div:nth-child(1) {
+        -webkit-animation-delay: .9s;
+                animation-delay: .9s; }
+      .coffee div:nth-child(2) {
+        -webkit-animation-delay: .2s;
+                animation-delay: .2s; }
+      .coffee div:nth-child(3) {
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s; }
+  
+  /*
+  * End Loader Icon CSS
+  */
   
   .custom-shape-divider-top-1672510980 {
       position: absolute;
