@@ -5,6 +5,10 @@ body {
   /*
   * Hamburger Nav
   */
+  #hamburger{
+      margin-right: 2%;
+  
+  }
   .hamburger .line{
       width: 50px;
       height: 5px;

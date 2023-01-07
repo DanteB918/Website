@@ -29,7 +29,8 @@ if (window.innerWidth < 1000){
 
 	function stopShow(){
 		
-
+		const lines = document.querySelectorAll('.hamburger .line');
+		lines.forEach(item => item.style.backgroundColor = '#ecf0f1');
 		$('.icon-li').fadeOut();
 		$('.mob-menu').fadeOut();
 		$('#hamburger').toggleClass("is-active");
