@@ -484,13 +484,13 @@ body {
       font-family: monospace;
       
   }
-  
-  .fluid-container{
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
+  .bio-text{
+    text-align:left;
   }
+  #words p{
+    padding: 0 3%;
+  }
+
   #projects ul li{
       list-style-type: none;
   }
