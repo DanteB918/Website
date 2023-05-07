@@ -1,12 +1,13 @@
-
+//Dynamic date for footer
 const d = new Date();
 const year = document.getElementById('year')
 year.innerHTML = d.getFullYear();
-if (window.innerWidth < 1000){
+
+if (window.innerWidth < 1000){ //Hamburger nav logic
 	$('.icon-li').hide();
 	$('.mob-menu').hide();
 
-	$(document).ready(function(){
+	$(document).ready(function(){ 
 		$(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
 		$('.mob-menu').fadeIn(400);
@@ -40,8 +41,8 @@ if (window.innerWidth < 1000){
 
 
 
-var typed = new Typed(".typing", {
-		strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer"],
+var typed = new Typed(".typing", { // typing animation
+		strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer",
 		typeSpeed: 150,
 		backSpeed: 60,
 		startDelay: 400
@@ -112,8 +113,7 @@ me.paroller({ factor: 0.1, type: 'foreground', direction: 'vertical',  });
 
 
 
-//Loader
-
+//Loading Effect
 $(window).on("load", function(){
 	$('.loader').delay(400).fadeOut('slow');
 });

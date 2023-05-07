@@ -2,6 +2,10 @@
 body {
     margin:0;
   }
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
   /*
   * Hamburger Nav
   */
@@ -264,8 +268,11 @@ body {
       color: white;
   }
   .work{
-      text-align:center;
+    display: block;
+    margin: auto;
+    text-align:center;
   }
+
   /*body{
       background: url(./images/space.webp);
    }*/
@@ -610,8 +617,8 @@ body {
   #Me{
       display: block;
       margin: 0 auto;
-      width: 400px;
       margin-bottom:75px;
+      max-width: 400px;
       overflow: hidden;
       background: #e0e0e0;
       box-shadow:  20px 20px 7px #bebebe,

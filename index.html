@@ -2,15 +2,17 @@
 <html>
     <head>
         <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <!--Jquery-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!--Paroller-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.1/jquery.paroller.min.js" integrity="sha512-jYedLgTWxBXtDBdGhnUgCgbgQ5j450R2LhxXk1G+pBcbaARaEC/qsrIhOtqAAiY7UBylc6bVGH6EFR10RNBXuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!--Hover.css-->
+        <script src="node_modules/atropos/atropos.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+        <!--Atropos Styles-->
+        <link rel="stylesheet" href="node_modules/atropos/atropos.css" />
         <!--Slick Slider--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -141,21 +143,13 @@
             <div class="col-12" style="text-align: center;" >
             <h1 id="ima" class="white">I'm <span id="developer" class="white">Dante Bradshaw</span>, <br/>And I'm a <span style="color:crimson;"class="typing"></span></h1>
             <p id="together" class="white">Let's work together.</p>
-            <a href="mailto:plansuperior@icloud.com">    <button class="btn"><span class="greet">Contact Me</span><i class="fa-solid fa-envelope"></i></button>
+            <a href="mailto:plansuperior@gmail.com">    <button class="btn"><span class="greet">Contact Me</span><i class="fa-solid fa-envelope"></i></button>
             </a>
             </div>
             <div id="skills">
                 <h2></h2>
         </div>
-       
-        
-       
-        
-            
-    
-      
     </div>
-    
 </div>
 <!--Moving Waves bottom of Hero Section-->
 <svg class="waves" id="theWave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -172,12 +166,24 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 </svg>
 
     <div style="background-color: rgba(239,239,240, 1); margin-bottom: 2%; padding-bottom: 2%;" class="fluid-container" align="center">
-    <div class="row">
+    <div class="row" style="margin-bottom: 3%;">
         <h1 align="center" style="color:black; font-family: Sedgwick Ave Display, serif; padding-top: 20px;" class="parolle">About Me</h1>
         <h3 align="center"><span style="color:crimson;"class="typing2"></span></h3>
-        <div id="Me" class="col-lg-6">
-            <img id="picofme" src="images/picofmenew.webp" height = "450px" alt="Dante Bradshaw" width = "400px"/>
-
+        <div class="col-lg-6">
+            <!-- main Atropos container (required), add your custom class here -->
+            <div class="atropos my-atropos">
+                <!-- scale container (required) -->
+                <div class="atropos-scale ">
+                <!-- rotate container (required) -->
+                <div id="Me" class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class=" atropos-inner">
+                        <img id="picofme" data-atropos-offset="5" src="images/picofmenew.webp" height = "450px" alt="Dante Bradshaw" width = "400px"/>
+    
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
         <div id="words" class="col-lg-6">
             <div class="row" style="display: flex; justify-content: center;">
@@ -352,7 +358,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                 <h1 id = "contactwords">Contact me</h1>
                 </span>
                 <h2>I would love to work with you!</h2>
-                <h2>plansuperior@icloud.com</h2>
+                <h2>plansuperior@gmail.com</h2>
                 
     </div>
    
@@ -395,3 +401,13 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 </html>
 
 
+<script type="module">
+
+    // import Atropos library
+
+const myAtropos = Atropos({
+    el: '.my-atropos',
+    shadow: false,
+    
+  });
+</script>
