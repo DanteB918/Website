@@ -64,21 +64,12 @@ $('.slick-slider').slick({
 	slidesToScroll: 1,
 	autoplay: true,
 	arrows: false,
-	autoplaySpeed: 10000,
+	dots: true,
+	autoplaySpeed: 5000,
 	speed: 500,
 });
 
 
-//Paroller
-const me = $('#Me');
-me.paroller({ factor: 0.1, type: 'foreground', direction: 'vertical',  });
-
-
-	const socials = $('.socials');
-	socials.paroller({ factor: .1, type: 'foreground', direction: 'vertical',  });
-
-
-	$('.parolle').paroller({ factor: .2, factorXs: .1, type: 'foreground', direction: 'vertical',  });
 
 
 
