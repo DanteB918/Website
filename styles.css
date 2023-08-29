@@ -877,7 +877,7 @@ body {
       background-color: transparent;
   }
   .socials i{
-    font-size: 2.75em;
+    font-size: 3em;
   }
     
   }
@@ -894,11 +894,6 @@ body {
   }
   .fluid-container{
       padding: none;
-  }
-  
-  .socials i{
-      padding: none;
-      font-size: 2.5em;
   }
   #proj .h1{
     font-size: 27px;
@@ -1002,11 +997,6 @@ body {
   }
   .fluid-container{
       padding: none;
-  }
-  
-  .socials i{
-      padding: none;
-      font-size:1em;
   }
   #proj .h1{
       font-size: 27px;
