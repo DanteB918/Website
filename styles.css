@@ -538,17 +538,6 @@ body {
           opacity: 1;
       }
   }
-  /*#projectholder{
-      height: 150px;
-      width: 400px;
-      margin: auto;
-      background-color:darkcyan;
-      box-shadow: 10px 10px;
-      text-align: center;
-      display: block;
-      
-      
-  }*/
   
   #projects{
       text-align: center;
@@ -602,8 +591,6 @@ body {
       font-family: 'Times New Roman', Times, serif;
       color: black;
       font-size: 18px;
-      
-      
   }
   
   a:link{
@@ -627,7 +614,6 @@ body {
       animation: to-load 2s linear infinite;
   }
   #bar{
-      /*background-color: darkcyan;*/
       background-color: lightgray;
       float:right;
       padding: none;
@@ -654,17 +640,11 @@ body {
       color: black;
   }
   nav li{
-      
       float: right;
-      /*border: 1px solid black;
-      border-radius: 20px;*/
-      /*background-color: cyan;*/
-       /*box-shadow: 2px 3px black;*/
      
   }
   nav li:hover{
       background-color: darkgray;
-      /*box-shadow: 0 0 15px limegreen;*/
   }
   
   nav ul li{
@@ -813,7 +793,7 @@ body {
   }
   
   @media only screen and (max-width: 1000px){
-      .sm-none{
+    .sm-none{
       display: none !important;
   }
 
@@ -837,18 +817,6 @@ body {
   .desk-only{
       display: none;
   }
-  /*.full-screen{
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: gray;
-      z-index: 9999;
-      display:flex;
-      justify-content:center;
-      align-items: center;
-  }*/
   .mob-menu{
       width: 100%;
       height: 100%;
@@ -862,8 +830,6 @@ body {
       background-color:rgba(255, 255, 255, 1);
       flex-direction: column;
     flex-wrap: wrap;
-  }
-  .mob-menu ul{
   }
   .icon-li{
       
