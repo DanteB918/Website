@@ -6,6 +6,37 @@ body {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+
+.h1{
+    font-family:'sedgwick ave display', cursive;
+}
+.slick-slider .h1{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.skills-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.skills-row img{
+    padding: 0 1%;
+    width: 7.5%;
+    object-fit: contain;
+}
+
+.row-tools{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items:center;
+}
+.row-tools img{
+    width: 12.5%;
+    height: 100%;
+    padding: 0 2%;
+}
   /*
   * Hamburger Nav
   */
@@ -262,6 +293,9 @@ body {
     h1 {
       font-size:24px;
     }
+    .h1{
+        font-size:24px;
+    }
   }
   
   .white{
@@ -358,7 +392,8 @@ body {
       100%{opacity: 0; z-index: 0}
   }
   .work{
-      width: 500px;
+      width: 100%;
+      padding: 2%;
   }
   
   input[type=text], select, textarea {
@@ -415,13 +450,12 @@ body {
   #everything{
       transform: translateY(50px);
   }
-  #words h1{
-      font-family: 'Space Mono', monospace;
-      
-  }
-  
+
   h1{
       font-size: 50px;
+  }
+  .h1{
+    font-size: 50px;
   }
   #RoboLogo{
       float:left;
@@ -514,8 +548,9 @@ body {
      
       text-align: center;
   }
-  #body2 h1{
-      transform: none;
+  #body2 .h1{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transform: none;
   }
   footer{
       background: rgb(0,0,0);
@@ -752,6 +787,16 @@ body {
       .sm-none{
       display: none !important;
   }
+
+  .skills-row img{
+        width: 15%;
+    }
+    .row-tools img{
+        width: 15%;
+    }
+    .slick-slide{
+        flex-direction: column !important;
+    }
   .hamburger{
       position: absolute;
       right: 0;
@@ -827,8 +872,8 @@ body {
       height: 75px;
       width: 75px;
   }
-  #proj h1{
-      font-size: 27px;
+  #proj .h1{
+    font-size: 27px;
   }
   .col-2{
       transform: translateX(-20%);
@@ -867,6 +912,9 @@ body {
       font-size: 35px;
      
   }
+  .h1{
+    font-size: 35px;
+  }
   
   #ima{
       transform: translateY(-50%);
@@ -877,30 +925,9 @@ body {
       font-family:'sedgwick ave display', cursive;
       font-size: 35px;
   }
-  #everything #skills{
-      
-  }
-  #everything #titleholder{
-      
-  }
-  #words .container{
-     
-  }
-  #words #body2{
-  }
-  #github{
-  }
-  #sololearn{
-  }
   #everything .waviy span{
       font-family: none;
       font-size: 40px;
-  }
-  
-  #projectholder{
-  }
-  #projectholder h1{
-      
   }
   
   }
@@ -928,7 +955,9 @@ body {
   }
   h1{
       font-size: 35px;
-     
+  }
+  .h1{
+    font-size: 35px;
   }
   nav ul li{
       padding: 0;
@@ -960,7 +989,7 @@ body {
       height: 75px;
       width: 75px;
   }
-  #proj h1{
+  #proj .h1{
       font-size: 27px;
   }
   .col-2{
@@ -968,12 +997,6 @@ body {
   }
   #together{
       transform: translateY(50%);
-  }
-  .work{
-      width: 95% !important;
-  }
-  .work:hover{
-      transform: none;
   }
   
   }
@@ -999,8 +1022,10 @@ body {
   }
   h1{
       font-size: 35px;
-     
   }
+  .h1{
+    font-size: 35px;  
+}
   nav ul li{
       padding: 0;
       margin: 3px;
@@ -1040,7 +1065,9 @@ body {
   #together{
       transform: translateY(50%);
   }
-  
+  .skills-row img{
+    width: 20%;
+  }
   
   }
   

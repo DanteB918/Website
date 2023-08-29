@@ -60,34 +60,17 @@ else if (window.innerWidth < 800){
 //Slick Slider JS
 $('.slick-slider').slick({
 	infinite: true,
-	slidesToShow: 3,
+	slidesToShow: 1,
 	slidesToScroll: 1,
 	autoplay: true,
 	arrows: false,
-	autoplaySpeed: 2000,
+	autoplaySpeed: 10000,
 	speed: 500,
-	responsive: [
-		{
-			breakpoint: 1589,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 1
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
 });
 
 
 //Paroller
 const me = $('#Me');
-console.log(document.body.scrollHeight);
 me.paroller({ factor: 0.1, type: 'foreground', direction: 'vertical',  });
 
 
