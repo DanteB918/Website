@@ -8,10 +8,10 @@ body {
 }
 
 .h1{
-    font-family:'sedgwick ave display', cursive;
+    font-family: 'Space Mono', monospace;
 }
 .slick-slider .h1{
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Space Mono', monospace;
 }
 .skills-row{
     display: flex;
@@ -356,7 +356,7 @@ body {
       animation-play-state: paused;
     }
   #developer{
-      font-family:'sedgwick ave display', cursive;
+    font-family: 'Space Mono', monospace;
       font-size: 75px;
   }
   html, body {
@@ -538,16 +538,9 @@ body {
           opacity: 1;
       }
   }
-  
-  #projects{
-      text-align: center;
-      font-weight: bold;
-      font-size: 25px;
-      font-family: monospace;
-      
-  }
+
   .bio-text{
-    /*font-family: 'Space Mono', monospace;*/
+    font-family: 'Space Mono', monospace;
     text-align: left;
     padding: 0 3%;
   }
@@ -556,7 +549,7 @@ body {
       list-style-type: none;
   }
   #proj{
-      font-family: 'Sedgwick Ave Display', serif;
+    font-family: 'Space Mono', monospace;
       color: white;
   }
   #body2{
@@ -567,7 +560,7 @@ body {
       text-align: center;
   }
   #body2 .h1{
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Space Mono', monospace;
     transform: none;
   }
   footer{
@@ -779,9 +772,11 @@ body {
       
   }
   #ima{
+      font-family: 'Space Mono', monospace;
       text-align: center;
   }
   #together{
+    font-family: 'Space Mono', monospace;
       text-align: center;
   }
   
@@ -911,7 +906,7 @@ body {
       
   }
   #developer{
-      font-family:'sedgwick ave display', cursive;
+    font-family: 'Space Mono', monospace;
       font-size: 35px;
   }
   #everything .waviy span{
@@ -939,7 +934,7 @@ body {
       
   }
   #developer{
-      font-family:'sedgwick ave display', cursive;
+    font-family: 'Space Mono', monospace;
       font-size: 35px;
   }
   h1{
@@ -992,7 +987,7 @@ body {
       transform: none;
   }
   #developer{
-      font-family:'sedgwick ave display', cursive;
+    font-family: 'Space Mono', monospace;
       font-size: 35px;
   }
   h1{
