@@ -302,6 +302,9 @@ body {
       color: white;
   }
   .work{
+    max-height: 600px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
     text-align:center;
@@ -840,6 +843,11 @@ body {
   .socials i{
     font-size: 3em;
   }
+  .work{
+    max-height: 300px;
+    width: auto !important;
+    max-width: 100%;
+  }
     
   }
   
@@ -979,12 +987,6 @@ body {
   
   .sm-none{
       display: none !important;
-  }
-  .work{
-      width: 95% !important;
-  }
-  .work:hover{
-      transform: none;
   }
   #developer{
     font-family: 'Space Mono', monospace;
