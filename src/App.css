@@ -1,0 +1,5 @@
+.fade-out-loader{
+    opacity: 0;
+    transition: 2s;
+    z-index: -9999;
+}
