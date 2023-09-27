@@ -48,16 +48,16 @@ function Nav() {
             <div id="mylogo">D</div>
             <div className="desk-only">
             <li className="icon-li">
-                    <Link to="/"><i className="fas fa-home"></i><span className="icon-name">Home</span></Link>
+                    <Link to=""><i className="fas fa-home"></i><span className="icon-name">Home</span></Link>
                 </li>
                 <li className="icon-li">
-                    <Link to="/contact" ><i className="fas fa-id-card"></i><span className="icon-name">Contact</span></Link>
+                    <Link to="contact" ><i className="fas fa-id-card"></i><span className="icon-name">Contact</span></Link>
                 </li>
                 {/* <li className="icon-li">
                     <a href="#skills"><i className="fas fa-laptop-code"><span className="icon-name">Skills</span></i></a>
                 </li> */}
                 <li className="icon-li">
-                    <Link to="/projects"><i className="fas fa-laptop-code"></i><span className="icon-name">Projects</span></Link>
+                    <Link to="projects"><i className="fas fa-laptop-code"></i><span className="icon-name">Projects</span></Link>
                 </li>
             </div>
             
