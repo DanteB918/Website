@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 function App() {
   return (
     <>
-      <Router>
+      <Router baseline="/">
         <Nav />
         <Hero />
         <Routes>
