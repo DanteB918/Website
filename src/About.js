@@ -9,45 +9,45 @@ function About() {
         dispatch(changeColor('rgba(239,239,240,'));
     });
   return (
-        <div style={{backgroundColor: 'rgba(239,239,240, 1)', paddingBottom: '2%', textAlign: 'center'}} class="fluid-container">
-        <div class="row" style={{marginBottom: '3%'}}>
-            <h2 class="h1" style={{color:'black', fontFamily: 'Space Mono, monospace', textAlign: 'center', paddingTop: 20}}>About Me</h2>
-            <div class="col-lg-6">
+        <div style={{backgroundColor: 'rgba(239,239,240, 1)', paddingBottom: '2%', textAlign: 'center'}} className="fluid-container">
+        <div className="row" style={{marginBottom: '3%'}}>
+            <h2 className="h1" style={{color:'black', fontFamily: 'Space Mono, monospace', textAlign: 'center', paddingTop: 20}}>About Me</h2>
+            <div className="col-lg-6">
                 {/* <!-- main Atropos container (required), add your custom class here --> */}
-                <div class="atropos my-atropos">
+                <div className="atropos my-atropos">
                     {/* <!-- scale container (required) --> */}
-                    <div class="atropos-scale ">
+                    <div className="atropos-scale ">
                         {/* <!-- rotate container (required) --> */}
-                        <div id="Me" class="atropos-rotate">
+                        <div id="Me" className="atropos-rotate">
                             {/* <!-- inner container (required) --> */}
-                            <div class=" atropos-inner">
+                            <div className=" atropos-inner">
                                 <img id="picofme" data-atropos-offset="5" src="images/picofmenew.webp" height = "450px" alt="Dante Bradshaw" width = "400px"/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="words" class="col-lg-6">
-                <div class="row" style={{display: 'flex', justifyContent: 'center'}}>
-                    <div class="col-2">
-                        <a href="https://www.linkedin.com/in/dante-bradshaw-6a05061a5/" target="_blank" class="socials linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <div id="words" className="col-lg-6">
+                <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
+                    <div className="col-2">
+                        <a href="https://www.linkedin.com/in/dante-bradshaw-6a05061a5/" target="_blank" className="socials linkedin"><i className="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <div class="col-2">
-                        <a href="https://www.instagram.com/dantebradshaw_/" target="_blank" class="socials ig"><i class="fa-brands fa-instagram"></i></a>
+                    <div className="col-2">
+                        <a href="https://www.instagram.com/dantebradshaw_/" target="_blank" className="socials ig"><i className="fa-brands fa-instagram"></i></a>
                     </div>
-                    <div class="col-2">
-                        <a href="https://www.facebook.com/dante.bradshaw.39" target="_blank" class="socials fb"><i class="fa-brands fa-facebook"></i></a>
+                    <div className="col-2">
+                        <a href="https://www.facebook.com/dante.bradshaw.39" target="_blank" className="socials fb"><i className="fa-brands fa-facebook"></i></a>
                     </div>
-                    <div class="col-2">
-                        <a href="https://github.com/danteb918" target="_blank" class="socials github"><i class="fa-brands fa-github"></i></a>
+                    <div className="col-2">
+                        <a href="https://github.com/danteb918" target="_blank" className="socials github"><i className="fa-brands fa-github"></i></a>
                     </div>
-                    <div class="col-2">
-                        <a href="https://vk.com/id571437082" target="_blank" class="socials vk"><i class="fa-brands fa-vk"></i></a>
+                    <div className="col-2">
+                        <a href="https://vk.com/id571437082" target="_blank" className="socials vk"><i className="fa-brands fa-vk"></i></a>
                     </div>
                 </div>
-                <div class="loader">
-                    <div class="loader-inner">
-                        <div class="coffee">
+                <div className="loader">
+                    <div className="loader-inner">
+                        <div className="coffee">
                             <div></div>
                             <div></div>
                             <div></div>
@@ -55,7 +55,7 @@ function About() {
                     </div>
                 </div> 
                 {/* <h3 style="margin-top: 1%; font-family: 'Space Mono', monospace; color: #4AF626; background-color:black;">~/my-biography/and/info</u></h3><br/> */}
-                <p class="bio-text">
+                <p className="bio-text">
                     Hey there, I'm Dante Bradshaw, a passionate software developer with a knack for crafting elegant solutions to complex problems. My journey into the world of code began with a curious mind and a determination to bring ideas to life through technology.
                     <br/><br/>
                     With a strong foundation in Laravel PHP, I've honed my skills in creating robust web applications that not only meet clients' needs but also exceed their expectations. I believe that clean, maintainable code is the cornerstone of any successful project, and I take pride in my ability to architect systems that stand the test of time.
@@ -63,8 +63,8 @@ function About() {
                 </div>
 
         </div>
-            <div class="row">
-                <p class="bio-text">
+            <div className="row">
+                <p className="bio-text">
                     My experience extends beyond just Laravel; I've dabbled in various other stacks, gaining valuable insights along the way. This exposure has equipped me with a versatile approach to problem-solving and a deep understanding of different technologies, enabling me to choose the right tool for the job.
                     <br/><br/>
                     What truly fuels my passion is the dynamic nature of the tech industry. I'm an ardent advocate for continuous learning, always staying up-to-date with the latest trends, best practices, and emerging technologies. This ensures that I can bring innovative ideas to the table and provide solutions that are not only current but also future-proof.
@@ -74,7 +74,7 @@ function About() {
                     I'm excited to connect with fellow developers, entrepreneurs, and tech enthusiasts. Whether you're looking to collaborate on a project, seeking advice, or just want to chat about the latest advancements in the tech world, feel free to reach out.
                 </p>
             </div>
-            <div class="skills-row">
+            <div className="skills-row">
                 <img src = "images/htmllogo.webp" alt="HTML" />
                 <img src = "images/csslogo.webp" alt="CSS" />
                 <img src = "images/js.png" alt="Javascript" />

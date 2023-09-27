@@ -46,36 +46,36 @@ function Nav() {
     <nav id= "bar">
         <ul>
             <div id="mylogo">D</div>
-            <div class="desk-only">
-            <li class="icon-li">
-                    <Link to="/"><i class="fas fa-home"></i><span class="icon-name">Home</span></Link>
+            <div className="desk-only">
+            <li className="icon-li">
+                    <Link to="/"><i className="fas fa-home"></i><span className="icon-name">Home</span></Link>
                 </li>
-                <li class="icon-li">
-                    <Link to="/contact" ><i class="fas fa-id-card"></i><span class="icon-name">Contact</span></Link>
+                <li className="icon-li">
+                    <Link to="/contact" ><i className="fas fa-id-card"></i><span className="icon-name">Contact</span></Link>
                 </li>
-                {/* <li class="icon-li">
-                    <a href="#skills"><i class="fas fa-laptop-code"><span class="icon-name">Skills</span></i></a>
+                {/* <li className="icon-li">
+                    <a href="#skills"><i className="fas fa-laptop-code"><span className="icon-name">Skills</span></i></a>
                 </li> */}
-                <li class="icon-li">
-                    <Link to="/projects"><i class="fas fa-laptop-code"></i><span class="icon-name">Projects</span></Link>
+                <li className="icon-li">
+                    <Link to="/projects"><i className="fas fa-laptop-code"></i><span className="icon-name">Projects</span></Link>
                 </li>
             </div>
             
-            <div class="mob-only">
+            <div className="mob-only">
                 <div className="hamburger" id="hamburger" onClick={clickNav}>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
                 </div>
-                <ul class="mob-menu" style={{display: 'none'}}>
-                    <li class="icon-li">
-                        <Link to="/" onClick={changePage}><i class="fas fa-home"></i><span class="icon-name">Home</span></Link>
+                <ul className="mob-menu" style={{display: 'none'}}>
+                    <li className="icon-li">
+                        <Link to="/" onClick={changePage}><i className="fas fa-home"></i><span className="icon-name">Home</span></Link>
                     </li>
-                    <li class="icon-li">
-                        <Link to="/contact" onClick={changePage}><i class="fas fa-id-card"></i><span class="icon-name">Contact</span></Link>
+                    <li className="icon-li">
+                        <Link to="/contact" onClick={changePage}><i className="fas fa-id-card"></i><span className="icon-name">Contact</span></Link>
                     </li>
-                    <li class="icon-li">
-                        <Link to="/projects" onClick={changePage}><i class="fas fa-laptop-code"></i><span class="icon-name">Projects</span></Link>
+                    <li className="icon-li">
+                        <Link to="/projects" onClick={changePage}><i className="fas fa-laptop-code"></i><span className="icon-name">Projects</span></Link>
                     </li>
                 </ul>
             </div>
