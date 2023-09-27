@@ -5,7 +5,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 
 function App() {
