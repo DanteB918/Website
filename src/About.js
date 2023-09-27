@@ -30,19 +30,19 @@ function About() {
             <div id="words" className="col-lg-6">
                 <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
                     <div className="col-2">
-                        <a href="https://www.linkedin.com/in/dante-bradshaw-6a05061a5/" target="_blank" className="socials linkedin"><i className="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/dante-bradshaw-6a05061a5/" target="_blank" rel="noreferrer" className="socials linkedin"><i className="fa-brands fa-linkedin"></i></a>
                     </div>
                     <div className="col-2">
-                        <a href="https://www.instagram.com/dantebradshaw_/" target="_blank" className="socials ig"><i className="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/dantebradshaw_/" target="_blank" rel="noreferrer" className="socials ig"><i className="fa-brands fa-instagram"></i></a>
                     </div>
                     <div className="col-2">
-                        <a href="https://www.facebook.com/dante.bradshaw.39" target="_blank" className="socials fb"><i className="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/dante.bradshaw.39" target="_blank" rel="noreferrer" className="socials fb"><i className="fa-brands fa-facebook"></i></a>
                     </div>
                     <div className="col-2">
-                        <a href="https://github.com/danteb918" target="_blank" className="socials github"><i className="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/danteb918" target="_blank" rel="noreferrer" className="socials github"><i className="fa-brands fa-github"></i></a>
                     </div>
                     <div className="col-2">
-                        <a href="https://vk.com/id571437082" target="_blank" className="socials vk"><i className="fa-brands fa-vk"></i></a>
+                        <a href="https://vk.com/id571437082" target="_blank" rel="noreferrer" className="socials vk"><i className="fa-brands fa-vk"></i></a>
                     </div>
                 </div>
                 <div className="loader">

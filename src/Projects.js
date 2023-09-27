@@ -54,11 +54,11 @@ function Projects() {
                                 <img src="images/mysql.png" alt="MySQL"/>
                             </div>
                             <br />
-                            <a href="https://github.com/DanteB918/find-mtg-games" target="_blank">Source Code <i className="fas fa-laptop-code"></i></a>
+                            <a href="https://github.com/DanteB918/find-mtg-games" target="_blank" rel="noreferrer">Source Code <i className="fas fa-laptop-code"></i></a>
                         </p>    
                     </div>
                     <div className="col-lg-6 float-lg-start" >
-                        <a href="https://github.com/DanteB918/find-mtg-games" target="_blank">
+                        <a href="https://github.com/DanteB918/find-mtg-games" target="_blank" rel="noreferrer">
                             <img src="images/mtg-gatherhub.png" alt="MTG Gatherhub" className="work"/>
                         </a>
                     </div>
@@ -67,7 +67,7 @@ function Projects() {
                     <div className="col-lg-6" style={{padding: '3%', textAlign: 'left', float: 'left'}}>
                         <p className="h1">PokeDex</p>
                         <p className="white">
-                            Chrome extension for looking up pokemon from the browser, using the <a href="https://pokeapi.co/" target="_blank">Pokemon API</a>,
+                            Chrome extension for looking up pokemon from the browser, using the <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">Pokemon API</a>,
                             we can take the user's input of the pokemon name and look it up using HTTP requests. I also made this same application for mobile, using React Native!
                             <div className="row-tools">
                                 <img src="images/htmllogo.webp" alt="HTML" className="img-fluid" />
@@ -77,14 +77,14 @@ function Projects() {
                                 <img src="images/pokemon-api.png" alt="Pokemon API" className="img-fluid" />
                             </div>
                             <br />
-                            <a href="https://github.com/DanteB918/PokeDextension" target="_blank">Source Code Extension <i className="fas fa-laptop-code"></i></a><br /><br />
-                            <a href="https://github.com/DanteB918/pokedex-react-native" target="_blank">Source Code Mobile <i className="fas fa-laptop-code"></i></a><br /><br />
-                            <a href="https://chrome.google.com/webstore/detail/pok%C3%A9dextension/abodchomfjonjkangmkadfacjlmjkgof" target="_blank">Chrome Store <i className="fa-brands fa-chrome"></i></a><br /><br />
-                            <a href="https://www.youtube.com/shorts/ZZMef6CuyQ4" target="_blank">Mobile Demo <i className="fa-brands fa-youtube"></i></a>
+                            <a href="https://github.com/DanteB918/PokeDextension" target="_blank" rel="noreferrer">Source Code Extension <i className="fas fa-laptop-code"></i></a><br /><br />
+                            <a href="https://github.com/DanteB918/pokedex-react-native" target="_blank" rel="noreferrer">Source Code Mobile <i className="fas fa-laptop-code"></i></a><br /><br />
+                            <a href="https://chrome.google.com/webstore/detail/pok%C3%A9dextension/abodchomfjonjkangmkadfacjlmjkgof" target="_blank" rel="noreferrer">Chrome Store <i className="fa-brands fa-chrome"></i></a><br /><br />
+                            <a href="https://www.youtube.com/shorts/ZZMef6CuyQ4" target="_blank" rel="noreferrer">Mobile Demo <i className="fa-brands fa-youtube"></i></a>
                         </p>    
                     </div>
                     <div className="col-lg-6 float-lg-start" >
-                        <a href="https://github.com/DanteB918/PokeDextension" target="_blank">
+                        <a href="https://github.com/DanteB918/PokeDextension" target="_blank" rel="noreferrer">
                             <img src="images/pokedex-img.png" alt="Pokedex Project" style={{maxWidth: '600px'}}  className="work"/>
                         </a>
                     </div>
@@ -96,15 +96,15 @@ function Projects() {
                             Using free sprites and assets from various sources, as well as the Phaser gaming engine (v3), I created a browser game that is free to use!
                             <div className="row-tools">
                                 <img src="images/js.png" alt="Javascript" className="img-fluid" />
-                                <a href="https://phaser.io/" target="_blank"><img src="images/phaser.png" alt="Phaser3" className="img-fluid" /></a>
+                                <a href="https://phaser.io/" target="_blank" rel="noreferrer"><img src="images/phaser.png" alt="Phaser3" className="img-fluid" /></a>
                             </div>
                             <br />
-                            <a href="https://github.com/DanteB918/wizard-game" target="_blank">Source Code <i className="fas fa-laptop-code"></i></a>
-                            <br /><br /><a href="https://danteb918.github.io/wizard-game/" target="_blank">Play Here <i className="fa-solid fa-gamepad"></i></a>
+                            <a href="https://github.com/DanteB918/wizard-game" target="_blank" rel="noreferrer">Source Code <i className="fas fa-laptop-code"></i></a>
+                            <br /><br /><a href="https://danteb918.github.io/wizard-game/" target="_blank" rel="noreferrer">Play Here <i className="fa-solid fa-gamepad"></i></a>
                         </p>
                     </div>
                     <div className="col-lg-6 float-lg-start" >
-                        <a href="https://danteb918.github.io/wizard-game/" target="_blank">
+                        <a href="https://danteb918.github.io/wizard-game/" target="_blank" rel="noreferrer">
                             <img src="images/phaser-game.png" alt="Phaser3 Game image"  className="work"/>
                         </a>
                     </div>
@@ -130,12 +130,12 @@ function Projects() {
                                 <img src="images/jquery.png" alt="FlaskWebGui" className="img-fluid" />
                             </div>
                             <br />
-                            <a href="https://github.com/DanteB918/sneeze.io" target="_blank">Source Code <i className="fas fa-laptop-code"></i></a>
+                            <a href="https://github.com/DanteB918/sneeze.io" target="_blank" rel="noreferrer">Source Code <i className="fas fa-laptop-code"></i></a>
                             <br /><br /><a href="Sneeze.io.exe">Download for Windows <i className="fa-brands fa-windows"></i></a>
                         </p>    
                     </div>
                     <div className="col-lg-6 float-lg-start" >
-                        <a href="https://github.com/DanteB918/sneeze.io" target="_blank">
+                        <a href="https://github.com/DanteB918/sneeze.io" target="_blank" rel="noreferrer">
                             <img src="images/sneezeio-pic.png" alt="Sneeze.io Desktop App"  className="work"/>
                         </a>
                     </div>
@@ -156,7 +156,7 @@ function Projects() {
                                 <img src="images/csslogo.png" alt="CSS" className="img-fluid" />
                             </div>
                             <br />
-                            <a href="https://github.com/DanteB918/Website" target="_blank">Source Code <i className="fas fa-laptop-code"></i></a>
+                            <a href="https://github.com/DanteB918/Website" target="_blank" rel="noreferrer">Source Code <i className="fas fa-laptop-code"></i></a>
                         </p>
                     </div>
                 </div>
