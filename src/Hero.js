@@ -11,7 +11,7 @@ function Hero() {
     const el = React.useRef(null);
     const { wave } = useSelector((state) => state.waveReducer);
     const dispatch = useDispatch();
-    
+
     React.useEffect(() => {
         var typed = new Typed(el.current, { // typing animation
             strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer",

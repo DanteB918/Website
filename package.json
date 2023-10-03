@@ -1,9 +1,8 @@
 {
+  "homepage": "https://dantebradshaw.com",
   "name": "site",
   "version": "0.1.0",
   "private": true,
-  "authors": "Dante Bradshaw",
-  "homepage": "https://dantebradshaw.com",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
