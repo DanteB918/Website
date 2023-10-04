@@ -5,13 +5,12 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 
 function App() {
   return (
     <>
-      <Router baseline="/">
         <Nav />
         <Hero />
         <Routes>
@@ -21,7 +20,6 @@ function App() {
           {/* <Route path="*" element={<NoMatch />} /> */}
         </Routes>
         <Footer />
-      </Router>
     </>
   );
 }
