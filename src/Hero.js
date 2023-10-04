@@ -13,6 +13,9 @@ function Hero() {
     const dispatch = useDispatch();
 
     React.useEffect(() => {
+
+        document.querySelector('.loader').classList.add('fade-out-loader');
+
         var typed = new Typed(el.current, { // typing animation
             strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer",
             typeSpeed: 150,
@@ -32,6 +35,15 @@ function Hero() {
 
   return (
     <>
+        <div className="loader">
+            <div className="loader-inner">
+                <div className="coffee">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
         <div style={{height: '100vh', width: '100%', textAlign: 'center'}} className="fluid-container">
             <div style={{transform: 'translateY(50vh)'}} className="row">
                 <div className="col-12" style={{textAlign: 'center'}} >

@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 function About() {
     const dispatch = useDispatch();
     useEffect(() => {
-        document.querySelector('.loader').classList.add('fade-out-loader');
         dispatch(changeColor('rgba(239,239,240,'));
     });
   return (
@@ -45,15 +44,6 @@ function About() {
                         <a href="https://vk.com/id571437082" target="_blank" rel="noreferrer" className="socials vk"><i className="fa-brands fa-vk"></i></a>
                     </div>
                 </div>
-                <div className="loader">
-                    <div className="loader-inner">
-                        <div className="coffee">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div> 
                 {/* <h3 style="margin-top: 1%; font-family: 'Space Mono', monospace; color: #4AF626; background-color:black;">~/my-biography/and/info</u></h3><br/> */}
                 <p className="bio-text">
                     Hey there, I'm Dante Bradshaw, a passionate software developer with a knack for crafting elegant solutions to complex problems. My journey into the world of code began with a curious mind and a determination to bring ideas to life through technology.
