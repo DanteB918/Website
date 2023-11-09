@@ -16,11 +16,11 @@ function Contact() {
                     Contact Me!
                     </p>
                 </div>
-            </div>    
+            </div>
         </div>
     <div className="container2" id="formcont">
         <form method="POST" action="https://getform.io/f/bf00913b-6ac4-4206-afbe-873948ce80a0">
-        
+
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" autoFocus required placeholder="Your name.." />
         
@@ -29,10 +29,10 @@ function Contact() {
 
             <label for="email">Email</label>
             <input type="email" name="Email" required placeholder="Your email.." />
-        
+
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write something.." style={{height: '200px'}}></textarea>
-        
+
             <input type="submit" value="Submit" />
 
         </form>

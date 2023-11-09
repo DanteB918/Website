@@ -49,17 +49,22 @@ function Nav() {
             <div className="desk-only">
                 <Link to="/">
                     <li className="icon-li">
-                        <i className="fas fa-home"></i><span className="icon-name">Home</span>
+                        <i className="fas fa-home"></i> <span className="icon-name">Home</span>
                     </li>
                 </Link>
                 <Link to="contact" >
                     <li className="icon-li">
-                        <i className="fas fa-id-card"></i><span className="icon-name">Contact</span>
+                        <i className="fas fa-id-card"></i> <span className="icon-name">Contact</span>
                     </li>
                 </Link>
                 <Link to="projects">
                     <li className="icon-li">
-                        <i className="fas fa-laptop-code"></i><span className="icon-name">Projects</span>
+                        <i className="fas fa-laptop-code"></i> <span className="icon-name">Projects</span>
+                    </li>
+                </Link>
+                <Link to="donation">
+                    <li className="icon-li">
+                        <i className="fa-solid fa-hand-holding-dollar"></i><span className="icon-name"> Donations</span>
                     </li>
                 </Link>
             </div>
@@ -79,6 +84,9 @@ function Nav() {
                     </li>
                     <li className="icon-li">
                         <Link to="/projects" onClick={changePage}><i className="fas fa-laptop-code"></i><span className="icon-name">Projects</span></Link>
+                    </li>
+                    <li className="icon-li">
+                        <Link to="/donation" onClick={changePage}><i className="fa-solid fa-hand-holding-dollar"></i><span className="icon-name">Donations</span></Link>
                     </li>
                 </ul>
             </div>
