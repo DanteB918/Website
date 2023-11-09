@@ -837,7 +837,7 @@ body {
     .icon-li{
         position: relative;
         display: block;
-        line-height: 4em;
+        line-height: 3em;
         font-size: 45px;
     }
     .icon-li:hover{
