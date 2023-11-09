@@ -45,7 +45,7 @@ function Nav() {
   return (
     <nav id= "bar">
         <ul>
-            <div id="mylogo">D</div>
+            <Link to="/"><div id="mylogo">D</div></Link>
             <div className="desk-only">
                 <Link to="/">
                     <li className="icon-li">
