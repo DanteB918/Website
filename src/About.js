@@ -79,6 +79,8 @@ function About() {
                 <img src = "images/laravel.png" alt="Laravel"/>
                 <img src = "images/livewire.png" alt="Livewire"/>
                 <img src = "images/Wordpress.png" alt="Wordpress"/>
+                <img src = "images/ruby.png" alt="Ruby"/>
+                <img src = "images/rails.png" alt="Ruby on Rails"/>
                 <img src = "images/docker.webp" alt="Docker"/>
                 <img src = "images/scss.webp" alt="SCSS"/>
                 <img src = "images/less.webp" alt="Less"/>
