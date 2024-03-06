@@ -1,8 +1,35 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { act } from "react-dom/test-utils";
+import About from './About';
+import { Provider } from 'react-redux';
+import store from './store';
+import { HashRouter } from 'react-router-dom';
+import Footer from './Footer';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+it("About contains correct name", () => {
+    act(() => {
+        render(
+            <Provider store={store}>
+                <HashRouter>
+                    <About />
+                </HashRouter>
+            </Provider>
+        );
+    });
+
+    const bioElement = screen.getByText(/Dante Bradshaw/);
+    expect(bioElement.textContent).toContain("I'm Dante Bradshaw");
+});
+
+it("Footer contains current year", () => {
+    act(() => {
+        render(
+            <HashRouter>
+                <Footer />
+            </HashRouter>
+        );
+    });
+
+    const footerElement = screen.getByText(/Created by/);
+    expect(footerElement.textContent).toContain(new Date().getFullYear().toString());
 });
