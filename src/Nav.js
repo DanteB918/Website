@@ -74,7 +74,7 @@ function Nav() {
                     <span className="line"></span>
                     <span className="line"></span>
                 </div>
-                <ul className="mob-menu d-none">
+                <ul className="mob-menu" style={{display: 'none'}}>
                     <li className="icon-li">
                         <Link to="/" onClick={changePage}><i className="fas fa-home"></i><span className="icon-name">Home</span></Link>
                     </li>
