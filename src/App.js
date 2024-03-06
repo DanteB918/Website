@@ -7,7 +7,6 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Donate from './Donate';
 import { Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
 
 function App() {
   return (

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { changeColor } from './Wave';
 
 function Nav() {
     const [showMob, setShowMob] = useState(false);
@@ -75,7 +74,7 @@ function Nav() {
                     <span className="line"></span>
                     <span className="line"></span>
                 </div>
-                <ul className="mob-menu" style={{display: 'none'}}>
+                <ul className="mob-menu d-none">
                     <li className="icon-li">
                         <Link to="/" onClick={changePage}><i className="fas fa-home"></i><span className="icon-name">Home</span></Link>
                     </li>
