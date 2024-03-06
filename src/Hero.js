@@ -1,10 +1,7 @@
 import React from 'react';
 import Typed from 'typed.js';
-import {Provider, useDispatch, useSelector} from "react-redux";
-import {
-    changeColor
-} from './Wave';
-import { useLocation } from 'react-router-dom';
+import {useDispatch, useSelector} from "react-redux";
+
 
 
 function Hero() {
@@ -44,12 +41,16 @@ function Hero() {
                 </div>
             </div>
         </div>
-        <div style={{height: '100vh', width: '100%', textAlign: 'center'}} className="fluid-container">
+        <div style={{height: '100vh'}} className="fluid-container text-center w-100">
             <div style={{transform: 'translateY(50vh)'}} className="row">
                 <div className="col-12" style={{textAlign: 'center'}} >
                     <h1 id="ima" className="white">I'm Dante Bradshaw, <br/>And I'm a <span style={{color: 'crimson'}} ref={el}></span></h1>
                     <p id="together" className="white">Let's work together.</p>
-                        <a href="mailto:plansuperior@gmail.com">    <button className="btn"><span className="greet">Contact Me</span><i className="fa-solid fa-envelope"></i></button>
+
+                    <a href="mailto:plansuperior@gmail.com">
+                        <button className="btn">
+                            <span className="greet">Contact Me</span><i className="fa-solid fa-envelope"></i>
+                        </button>
                     </a>
                 </div>
             </div>

@@ -8,9 +8,9 @@ function About() {
         dispatch(changeColor('rgba(239,239,240,'));
     });
   return (
-        <div style={{backgroundColor: 'rgba(239,239,240, 1)', paddingBottom: '2%', textAlign: 'center'}} className="fluid-container">
-        <div className="row" style={{marginBottom: '3%'}}>
-            <h2 className="h1" style={{color:'black', fontFamily: 'Space Mono, monospace', textAlign: 'center', paddingTop: 20}}>About Me</h2>
+        <div style={{backgroundColor: 'rgba(239,239,240, 1)', paddingBottom: '2%'}} className="fluid-container text-center">
+        <div className="row mb-4">
+            <h2 className="h1 text-center" style={{color:'black', fontFamily: 'Space Mono, monospace', paddingTop: 20}}>About Me</h2>
             <div className="col-lg-6">
                 {/* <!-- main Atropos container (required), add your custom class here --> */}
                 <div className="atropos my-atropos">
@@ -27,7 +27,7 @@ function About() {
                 </div>
             </div>
             <div id="words" className="col-lg-6">
-                <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
+                <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-2">
                         <a href="https://www.linkedin.com/in/dante-bradshaw-6a05061a5/" target="_blank" rel="noreferrer" className="socials linkedin"><i className="fa-brands fa-linkedin"></i></a>
                     </div>
@@ -44,7 +44,7 @@ function About() {
                         <a href="https://vk.com/id571437082" target="_blank" rel="noreferrer" className="socials vk"><i className="fa-brands fa-vk"></i></a>
                     </div>
                 </div>
-                <div className="row" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-2">
                         <a href="https://rubygems.org/profiles/danteb918" target="_blank" rel="noreferrer" className="socials"><img src="/images/ruby-gems.png" alt="RubyGems.org Logo" width="70%" style={{width: '70%', maxWidth: '90px'}} /></a>
                     </div>

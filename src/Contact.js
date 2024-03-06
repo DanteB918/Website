@@ -9,10 +9,10 @@ function Contact() {
   })
   return (
     <div style={{backgroundColor: 'rgba(23, 25, 35)'}} className="pb-4" >
-        <div className="container" id="project" style={{paddingBottom: '5%'}}>
+        <div className="container" id="project">
             <div className="row">
                 <div id="proj">
-                    <p className="h1" style={{textAlign: 'center'}}>
+                    <p className="h1 text-center">
                     Contact Me!
                     </p>
                 </div>

@@ -6,9 +6,9 @@ const year = d.getFullYear();
 
 function Footer() {
   return (
-    <div className="fluid-container" style={{width: '100%'}}>
-        <div className="row" style={{backgroundColor: 'black'}}>
-            <footer id="footer" style={{paddingTop: '1%', paddingBottom: '3%', textAlign: 'center', transform: 'translateY(25%)'}}>
+    <div className="fluid-container w-100">
+        <div className="row bg-black">
+            <footer id="footer" className='text-center pt-4 pb-4'>
                 Created by <Link to="" style={{color: 'crimson'}}>Dante Bradshaw</Link> |  ©{year} <br/>All rights reserved.
             </footer>
         </div>

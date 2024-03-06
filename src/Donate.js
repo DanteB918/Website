@@ -12,7 +12,7 @@ function Donate() {
         <div className="container2 text-center mb-4" id="donate">
             <div className="row">
                 <div id="proj">
-                    <p className="h1" style={{textAlign: 'center'}}>
+                    <p className="h1 text-center">
                         Donate
                     </p>
                 </div>
