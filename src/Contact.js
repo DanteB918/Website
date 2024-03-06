@@ -22,7 +22,7 @@ function Contact() {
         <form method="POST" action="https://getform.io/f/bf00913b-6ac4-4206-afbe-873948ce80a0">
 
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" autoFocus required placeholder="Your name.." />
+            <input type="text" id="fname" name="firstname" required placeholder="Your name.." />
         
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" required placeholder="Your last name.." />
