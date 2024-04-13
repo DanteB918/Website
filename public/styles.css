@@ -1,12 +1,16 @@
 
 body {
     margin:0;
-  }
+}
 .row{
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
-
+.nav-logo {
+    width: 2.5%;
+    float: left;
+    margin: .5% 1.5%;
+}
 .h1{
     font-family: 'Space Mono', monospace;
     color: white;
@@ -284,6 +288,12 @@ body {
   }
   /*Shrinking for mobile*/
   @media (max-width: 768px) {
+    .nav-logo {
+        width: 10%;
+        float: left;
+        margin: .5% 1.5%;
+    }
+
     .waves {
       height:70px;
       min-height:70px;
@@ -365,63 +375,6 @@ body {
   }
   html, body {
       max-width: 100%;
-      
-      
-  }
-  
-  /*.container{
-      border: 1px solid black;
-  }
-  .col-2{
-      border: 1px solid black;
-  }
-  .row{
-      border: 1px solid greenyellow;
-  }*/
-  
-  
-  
-  /*#loadwrapper{
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      background-color: black;
-      z-index: 9999;
-      display:absolute;
-      left: 0;
-      top: 0;
-      animation: to-disappear 1s forwards 2s;
-  }
-  #Loaderimg{
-      height: 500px;
-      width: 500px;
-      margin: auto;
-      display: block;
-      border-radius: 50%;
-      box-shadow: 0 0 30px darkcyan;
-      border: 100px solid darkcyan;
-      transform: translateY(25px);
-      
-  }
-  #Loadericon{
-      height: 100px;
-      width: 100px;
-      background-color: cyan;
-      text-align: center;
-      border-radius: 50%;
-      position: relative;
-      animation: to-load 2s infinite;
-      text-align: center;
-      font-size: 85px;
-      margin: auto;
-      display: block;
-      transform: translateY(220%);
-      font-family: 'updock', serif;
-  }*/
-  
-  @keyframes to-load{
-      0%{box-shadow: 0 0 5px crimson;}
-      100%{box-shadow: 0 0 100px crimson;}
   }
   @keyframes to-disappear{
       0%{ opacity: 1;}
@@ -498,22 +451,7 @@ body {
   .h1{
     font-size: 50px;
   }
-  #RoboLogo{
-      float:left;
-      position: absolute;
-  }
-  
-  /*#titleholder{
-      height: 150px;
-      width: 500px;
-      margin: auto;
-      background-color:darkcyan;
-      box-shadow: 10px 10px;
-      text-align: center;
-      display: block;
-  }*/
-  
-  
+
   .waviy {
     position: relative;
     text-align: center;
@@ -612,9 +550,6 @@ body {
       left: 75px;
       color: white;
   
-  }
-  #mylogo:hover{
-      animation: to-load 2s linear infinite;
   }
   #bar{
       background-color: lightgray;

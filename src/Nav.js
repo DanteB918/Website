@@ -44,7 +44,7 @@ function Nav() {
   return (
     <nav id= "bar">
         <ul>
-            <Link to="/"><div id="mylogo">D</div></Link>
+            <Link to="/"><img src="images/logo-red-d-tag.png" className='nav-logo' alt='Logo' /></Link>
             <div className="desk-only">
                 <Link to="/">
                     <li className="icon-li">
