@@ -1,10 +1,8 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 import { changeColor } from './Wave';
 import { changeText } from './HeroText';
 
-function Contact() {
-  const dispatch = useDispatch();
+function Contact(props) {
   const heroOptions = {
     text: "Contact",
     typedText: 'Me!',
@@ -12,8 +10,8 @@ function Contact() {
   };
 
   useEffect(() => {
-    dispatch(changeColor('rgba(23, 25, 35,'));
-    dispatch(changeText(heroOptions));
+    props.dispatch(changeColor('rgba(23, 25, 35,'));
+    props.dispatch(changeText(heroOptions));
   })
   return (
     <div style={{backgroundColor: 'rgba(23, 25, 35)'}} className="pb-4" >

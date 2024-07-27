@@ -7,17 +7,20 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Donate from './Donate';
 import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 function App() {
+  const dispatch = useDispatch();
+
   return (
     <>
         <Nav />
         <Hero />
         <Routes>
-          <Route path="" element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="donation" element={<Donate />} />
+          <Route path="" element={<About dispatch={dispatch} />} />
+          <Route path="projects" element={<Projects dispatch={dispatch} />} />
+          <Route path="contact" element={<Contact dispatch={dispatch} />} />
+          <Route path="donation" element={<Donate dispatch={dispatch} />} />
           {/* <Route path="*" element={<NoMatch />} /> */}
         </Routes>
         <Footer />

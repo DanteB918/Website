@@ -1,11 +1,9 @@
 import Slider from "react-slick";
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 import { changeColor } from './Wave';
 import { changeText } from './HeroText';
 
-function Projects() {
-    const dispatch = useDispatch();
+function Projects(props) {
     const heroOptions = {
         text: "My",
         typedText: 'Projects!',
@@ -13,8 +11,8 @@ function Projects() {
     };
 
     useEffect(() => {
-      dispatch(changeColor('rgba(32, 32, 32,'));
-      dispatch(changeText(heroOptions));
+      props.dispatch(changeColor('rgba(32, 32, 32,'));
+      props.dispatch(changeText(heroOptions));
     })
     //Slider
     const settings = {

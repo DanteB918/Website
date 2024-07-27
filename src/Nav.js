@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 
 function Nav() {
-    const [showMob, setShowMob] = useState(false);
     const [isActive, setIsActive] = useState(false);
-    const dispatch = useDispatch();
 
     const changePage = () =>{
         window.scrollTo(0, 0);
@@ -19,7 +16,7 @@ function Nav() {
     }
 
     const clickNav = () => {
-        isActive ? setIsActive(false) : setIsActive(true); //toggle active state
+       setIsActive(! isActive);
             if (isActive){
                 document.querySelector('#hamburger').classList.add('is-active');
                 document.querySelector('.mob-menu').style.zIndex = '9998';
