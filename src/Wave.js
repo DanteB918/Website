@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { current } from '@reduxjs/toolkit'
 
 export const waveColor = createSlice({
   name: 'waveColor',

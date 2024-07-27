@@ -1,20 +1,19 @@
 import React from 'react';
 import Typed from 'typed.js';
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 
 
 
 function Hero() {
     const el = React.useRef(null);
     const { wave } = useSelector((state) => state.waveReducer);
-    const dispatch = useDispatch();
+    const { text, typedText, subText } = useSelector((state) => state.heroText);
 
     React.useEffect(() => {
-
         document.querySelector('.loader').classList.add('fade-out-loader');
 
         var typed = new Typed(el.current, { // typing animation
-            strings: ["Developer"],//, "Software Engineer", "Designer", "Freelancer",
+            strings: [typedText],
             typeSpeed: 150,
             backSpeed: 60,
             startDelay: 400
@@ -22,13 +21,9 @@ function Hero() {
         });
 
         return () => {
-            // Destroy Typed instance during cleanup to stop animation
             typed.destroy();
           };
-
-      }, []);
-
-
+      });
 
   return (
     <>
@@ -44,8 +39,8 @@ function Hero() {
         <div style={{height: '100vh'}} className="fluid-container text-center w-100">
             <div style={{transform: 'translateY(50vh)'}} className="row">
                 <div className="col-12" style={{textAlign: 'center'}} >
-                    <h1 id="ima" className="white">I'm Dante Bradshaw, <br/>And I'm a <span style={{color: 'crimson'}} ref={el}></span></h1>
-                    <p id="together" className="white">Let's work together.</p>
+                    <h1 id="ima" className="white">{ text } <span style={{color: 'crimson'}} ref={ el }></span></h1>
+                    <p id="together" className="white">{ subText }</p>
 
                     <a href="mailto:plansuperior@gmail.com">
                         <button className="btn">
@@ -55,7 +50,7 @@ function Hero() {
                 </div>
             </div>
         </div>
-        {/* <!--Moving Waves bottom of Hero Section--> */}
+
         <svg className="waves" id="theWave" xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>

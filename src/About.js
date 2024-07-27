@@ -2,10 +2,19 @@ import './App.css';
 import { useDispatch } from 'react-redux';
 import { changeColor } from './Wave';
 import { useEffect } from 'react';
+import { changeText } from './HeroText';
+
 function About() {
     const dispatch = useDispatch();
+    const heroOptions = {
+        text: <span>I'm Dante Bradshaw,<br /> And I'm a</span>,
+        typedText: "Developer",
+        subText: "Let's work together."
+    };
+
     useEffect(() => {
         dispatch(changeColor('rgba(239,239,240,'));
+        dispatch(changeText(heroOptions));
     });
   return (
         <div style={{backgroundColor: 'rgba(239,239,240, 1)', paddingBottom: '2%'}} className="fluid-container text-center">

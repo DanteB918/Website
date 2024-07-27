@@ -1,11 +1,19 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { changeColor } from './Wave';
+import { changeText } from './HeroText';
 
 function Donate() {
   const dispatch = useDispatch();
+  const heroOptions = {
+    text: "Sponsor my",
+    typedText: 'work!',
+    subText: "More information below."
+  };
+
   useEffect(() => {
     dispatch(changeColor('rgba(23, 25, 35,'));
+    dispatch(changeText(heroOptions));
   })
   return (
     <div style={{backgroundColor: 'rgba(23, 25, 35)'}} className="pb-4" >

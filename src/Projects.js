@@ -2,11 +2,19 @@ import Slider from "react-slick";
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { changeColor } from './Wave';
+import { changeText } from './HeroText';
 
 function Projects() {
     const dispatch = useDispatch();
+    const heroOptions = {
+        text: "My",
+        typedText: 'Projects!',
+        subText: "Swipe left or right below"
+    };
+
     useEffect(() => {
       dispatch(changeColor('rgba(32, 32, 32,'));
+      dispatch(changeText(heroOptions));
     })
     //Slider
     const settings = {
@@ -22,17 +30,6 @@ function Projects() {
     }
   return (
     <div style={{backgroundColor: 'rgba(32,32,32)'}}>
-    
-        
-        <div className="container" id="project" style={{paddingBottom: '5%'}}>
-            <div className="row">
-                <div id="proj">
-                    <p className="h1" style={{textAlign: 'center'}}>
-                    Projects
-                    </p>
-                </div>
-            </div>    
-        </div>
         <div style={{textAlign: 'center', paddingBottom: '6%'}} className="fluid-container">
             <Slider {...settings} className="row white"  style={{paddingBottom: '2%', display: 'flex', justifyContent: 'center'}}>
                 <div>
