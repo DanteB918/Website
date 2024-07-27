@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import './App.css';
 
 const d = new Date();
 const year = d.getFullYear();

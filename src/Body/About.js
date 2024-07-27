@@ -1,7 +1,6 @@
-import './App.css';
-import { changeColor } from './Wave';
+import { changeColor } from '../Reducers/Wave';
 import { useEffect } from 'react';
-import { changeText } from './HeroText';
+import { changeText } from '../Reducers/HeroText';
 
 function About(props) {
     const heroOptions = {

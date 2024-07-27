@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import waveReducer from './Wave';
-import heroText from './HeroText';
+import waveReducer from './Reducers/Wave';
+import heroText from './Reducers/HeroText';
 
 export default configureStore({
     reducer: {

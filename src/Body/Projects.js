@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import { useEffect } from 'react';
-import { changeColor } from './Wave';
-import { changeText } from './HeroText';
+import { changeColor } from '../Reducers/Wave';
+import { changeText } from '../Reducers/HeroText';
 
 function Projects(props) {
     const heroOptions = {

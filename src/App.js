@@ -1,11 +1,11 @@
 import './App.css';
 import Nav from './Nav';
 import Hero from './Hero';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
+import About from './Body/About';
+import Projects from './Body/Projects';
+import Contact from './Body/Contact';
+import Donate from './Body/Donate';
 import Footer from './Footer';
-import Donate from './Donate';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 

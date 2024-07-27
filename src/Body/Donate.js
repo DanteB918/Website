@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { changeColor } from './Wave';
-import { changeText } from './HeroText';
+import { changeColor } from '../Reducers/Wave';
+import { changeText } from '../Reducers/HeroText';
 
 function Donate(props) {
   const heroOptions = {
