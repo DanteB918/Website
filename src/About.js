@@ -10,7 +10,7 @@ function About() {
   return (
         <div style={{backgroundColor: 'rgba(239,239,240, 1)', paddingBottom: '2%'}} className="fluid-container text-center">
         <div className="row mb-4">
-            <h2 className="h1 text-center" style={{color:'black', fontFamily: 'Space Mono, monospace', paddingTop: 20}}>About Me</h2>
+            <h2 className="h1 text-center" style={{color:'black', fontFamily: 'Space Mono, monospace', paddingTop: 20, paddingBottom: 20}}>About Me</h2>
             <div className="col-lg-6">
                 {/* <!-- main Atropos container (required), add your custom class here --> */}
                 <div className="atropos my-atropos">
